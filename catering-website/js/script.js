@@ -167,3 +167,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Testimonials
 
+
+// Hamburger menu toggle
+document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('navMenu').classList.toggle('nav-open');
+    this.classList.toggle('open');
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', function() {
+        document.getElementById('navMenu').classList.remove('nav-open');
+        document.getElementById('hamburger').classList.remove('open');
+    });
+});
+
