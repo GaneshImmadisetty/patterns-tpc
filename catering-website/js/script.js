@@ -8,6 +8,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
+
+
+
+
+
+
 // Add fade-in animation on scroll
 const observerOptions = {
     threshold: 0.1
@@ -165,8 +173,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Testimonials
 
+
+
+
+// Testimonials
 
 // Hamburger menu toggle
 document.getElementById('hamburger').addEventListener('click', function() {

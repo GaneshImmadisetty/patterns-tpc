@@ -39,6 +39,7 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
 .logo {
@@ -855,24 +856,32 @@ cite {
         display: flex;
         margin-left: auto;
         order: initial;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 1001;
     }
 
     #navMenu {
         display: none;
         order: initial;
+        width: 100%;
     }
 
     #navMenu.nav-open {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+        top: 30%;
+        right: 15px;
         background-color: white;
         padding: 1rem;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         z-index: 1000;
+        width: 220px;
+        border-radius: 8px;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 
     .contact-info {
@@ -883,12 +892,13 @@ cite {
         flex-direction: column;
         margin: 0;
         width: 100%;
+        align-items: flex-start;
     }
 
     nav ul li {
         margin: 0.5rem 0;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .hero-content h2 {
@@ -940,12 +950,14 @@ cite {
   /* Header adjustments */
   header .container {
     flex-direction: column;
+     align-items: flex-start;
+    
     padding: 0 10px;
   }
   .logo, .platinum-image-logo {
     width: 120px;
     height: 120px;
-    margin: 0 auto 10px;
+    margin: 0 auto 10px 0;
   }
   nav ul {
     flex-direction: column;
