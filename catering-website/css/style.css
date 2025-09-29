@@ -976,14 +976,18 @@ cite {
   #hero {
     height: auto;
     flex-direction: column;
+    padding-top: 10px;
+    /* padding-top: 80px */
   }
+
+  
   .hero-container {
     flex-direction: column;
     padding: 0;
     height: auto;
   }
   .hero-image {
-    min-height: 200px;
+    min-height: 400px;
     height: 35vw;
     width: 100%;
     background-position: center;
