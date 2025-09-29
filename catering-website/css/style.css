@@ -1333,3 +1333,64 @@ cite {
 }
 
 
+
+
+
+nav ul li ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* below parent */
+  left: 0;
+  background: #fff; /* background color */
+  min-width: 180px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 1001;
+}
+
+nav ul li ul.dropdown-menu li {
+  display: block;
+}
+
+nav ul li ul.dropdown-menu li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li ul.dropdown-menu li a:hover {
+  background: #f4f4f4;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover ul.dropdown-menu {
+  display: block;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li {
+  position: relative;
+}
+
+/* Hide dropdown by default */
+nav ul li ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 1001;
+}
+
+/* Desktop hover */
+nav ul li:hover ul.dropdown-menu {
+  display: block;
+}
+
+/* Mobile active toggle */
+nav ul li.active > ul.dropdown-menu {
+  display: block;
+}

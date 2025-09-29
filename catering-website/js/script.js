@@ -190,6 +190,10 @@ document.querySelectorAll('#navMenu a').forEach(link => {
     link.addEventListener('click', function() {
         document.getElementById('navMenu').classList.remove('nav-open');
         document.getElementById('hamburger').classList.remove('open');
+        // Also close any open dropdowns
+        document.querySelectorAll('#navMenu .dropdown.active').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
     });
 });
 

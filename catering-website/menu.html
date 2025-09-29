@@ -1,258 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Platinum Plate | Premium Catering Services in Hyderabad, serving exquisite cuisine with elegance, taste, and unforgettable hospitality.</title>
-    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg">
-    <meta name="description" content="Explore our diverse menu including vegetarian, non-vegetarian, desserts, and beverages for all your catering needs.">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-     <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-        <img src="images/platinum plate.jpg" class="platinum-image-logo" alt="The
-         Platinum Plate" />
-         </a>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Platinum Plate | Premium Catering Services in Hyderabad, serving
+      exquisite cuisine with elegance, taste, and unforgettable hospitality.
+    </title>
+    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg" />
+    <meta
+      name="description"
+      content="Explore our diverse menu including vegetarian, non-vegetarian, desserts, and beverages for all your catering needs."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/platinum plate.jpg"
+              class="platinum-image-logo"
+              alt="The
+         Platinum Plate"
+            />
+          </a>
+        </div>
 
-      <!-- Hamburger Button -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-      <!-- Navigation -->
-      <nav id="navMenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <!-- Navigation -->
+        <nav id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
 
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <a href="tel:+911234567890">Call Now: +91 1234567890</a>
-        <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
+            <!-- Services with dropdown -->
+            <li class="dropdown">
+              <!-- Add class="dropdown-toggle" -->
+              <!-- Use href="javascript:void(0)" to stop navigation -->
+              <a href="javascript:void(0)" class="dropdown-toggle"
+                >Services ▾</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="service1.html">Catering</a></li>
+                <li><a href="service2.html">Event Planning</a></li>
+                <li><a href="service3.html">Decorations</a></li>
+                <li><a href="service4.html">Custom Packages</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggles =
+              document.querySelectorAll(".dropdown-toggle");
+
+            dropdownToggles.forEach((toggle) => {
+              toggle.addEventListener("click", function (e) {
+                e.preventDefault(); // Stop default link behavior
+                e.stopPropagation(); // ⬅️ Prevent event from closing nav
+                this.parentElement.classList.toggle("active");
+              });
+            });
+          });
+        </script>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <a href="tel:+911234567890">Call Now: +91 1234567890</a>
+          <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <section id="menu-hero">
-        <div class="container">
-            <h1>Our Menu</h1>
-            <p>Delicious dishes for every palate and occasion.</p>
-        </div>
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p>Delicious dishes for every palate and occasion.</p>
+      </div>
     </section>
 
     <section id="menu-categories">
-    <div class="container">
+      <div class="container">
         <div class="menu-tabs">
-            <button class="tab-btn active" data-category="veg">Vegetarian</button>
-            <button class="tab-btn" data-category="nonveg">Non-Vegetarian</button>
-            <button class="tab-btn" data-category="desserts">Desserts</button>
-            <button class="tab-btn" data-category="beverages">Beverages</button>
+          <button class="tab-btn active" data-category="veg">Vegetarian</button>
+          <button class="tab-btn" data-category="nonveg">Non-Vegetarian</button>
+          <button class="tab-btn" data-category="desserts">Desserts</button>
+          <button class="tab-btn" data-category="beverages">Beverages</button>
         </div>
         <div class="menu-content">
-            
-            <!-- Vegetarian -->
-            <div id="veg" class="menu-category active">
-                <h2>Vegetarian Dishes</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <img src="https://images.pexels.com/photos/30858402/pexels-photo-30858402.jpeg?_gl=1*tdc9yt*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjU5NzckajU5JGwwJGgw" alt="Paneer Butter Masala">
-                        <h3>Paneer Butter Masala</h3>
-                        <p>Creamy and rich paneer curry.</p>
-                        <span class="price">₹250 per plate</span>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.pexels.com/photos/7593267/pexels-photo-7593267.jpeg?_gl=1*170e593*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjY5NzMkajI4JGwwJGgw" alt="Vegetable Biryani">
-                        <h3>Vegetable Biryani</h3>
-                        <p>Aromatic rice with mixed vegetables.</p>
-                        <span class="price">₹200 per plate</span>
-                    </div>
-                </div>
+          <!-- Vegetarian -->
+          <div id="veg" class="menu-category active">
+            <h2>Vegetarian Dishes</h2>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img
+                  src="https://images.pexels.com/photos/30858402/pexels-photo-30858402.jpeg?_gl=1*tdc9yt*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjU5NzckajU5JGwwJGgw"
+                  alt="Paneer Butter Masala"
+                />
+                <h3>Paneer Butter Masala</h3>
+                <p>Creamy and rich paneer curry.</p>
+                <span class="price">₹250 per plate</span>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.pexels.com/photos/7593267/pexels-photo-7593267.jpeg?_gl=1*170e593*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjY5NzMkajI4JGwwJGgw"
+                  alt="Vegetable Biryani"
+                />
+                <h3>Vegetable Biryani</h3>
+                <p>Aromatic rice with mixed vegetables.</p>
+                <span class="price">₹200 per plate</span>
+              </div>
             </div>
+          </div>
 
-            <!-- Non-Vegetarian -->
-            <div id="nonveg" class="menu-category">
-                <h2>Non-Vegetarian Dishes</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <img src="https://images.pexels.com/photos/14691481/pexels-photo-14691481.png?_gl=1*mrm5cd*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjcxMDkkajMkbDAkaDA." alt="Chicken Curry">
-                        <h3>Chicken Curry</h3>
-                        <p>Spicy and flavorful chicken curry.</p>
-                        <span class="price">₹300 per plate</span>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.pexels.com/photos/9609847/pexels-photo-9609847.jpeg?_gl=1*rrqg6y*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjcyNTIkajU5JGwwJGgw" alt="Mutton Biryani">
-                        <h3>Mutton Biryani</h3>
-                        <p>Tender mutton with basmati rice.</p>
-                        <span class="price">₹350 per plate</span>
-                    </div>
-                </div>
+          <!-- Non-Vegetarian -->
+          <div id="nonveg" class="menu-category">
+            <h2>Non-Vegetarian Dishes</h2>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img
+                  src="https://images.pexels.com/photos/14691481/pexels-photo-14691481.png?_gl=1*mrm5cd*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjcxMDkkajMkbDAkaDA."
+                  alt="Chicken Curry"
+                />
+                <h3>Chicken Curry</h3>
+                <p>Spicy and flavorful chicken curry.</p>
+                <span class="price">₹300 per plate</span>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.pexels.com/photos/9609847/pexels-photo-9609847.jpeg?_gl=1*rrqg6y*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjcyNTIkajU5JGwwJGgw"
+                  alt="Mutton Biryani"
+                />
+                <h3>Mutton Biryani</h3>
+                <p>Tender mutton with basmati rice.</p>
+                <span class="price">₹350 per plate</span>
+              </div>
             </div>
+          </div>
 
-            <!-- Desserts -->
-            <div id="desserts" class="menu-category">
-                <h2>Desserts</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/4291f9dc-9177-453e-96a1-b812746aae5a.png" alt="Ras Malai">
-                        <h3>Ras Malai</h3>
-                        <p>Soft cheese dumplings in sweetened milk.</p>
-                        <span class="price">₹50 per piece</span>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.pexels.com/photos/30577321/pexels-photo-30577321.jpeg?_gl=1*18gfkgt*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjc5MTkkajU5JGwwJGgw" alt="Gulab Jamun">
-                        <h3>Gulab Jamun</h3>
-                        <p>Sweet dumplings soaked in rose syrup.</p>
-                        <span class="price">₹40 per piece</span>
-                    </div>
-                </div>
+          <!-- Desserts -->
+          <div id="desserts" class="menu-category">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img
+                  src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/4291f9dc-9177-453e-96a1-b812746aae5a.png"
+                  alt="Ras Malai"
+                />
+                <h3>Ras Malai</h3>
+                <p>Soft cheese dumplings in sweetened milk.</p>
+                <span class="price">₹50 per piece</span>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.pexels.com/photos/30577321/pexels-photo-30577321.jpeg?_gl=1*18gfkgt*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjc5MTkkajU5JGwwJGgw"
+                  alt="Gulab Jamun"
+                />
+                <h3>Gulab Jamun</h3>
+                <p>Sweet dumplings soaked in rose syrup.</p>
+                <span class="price">₹40 per piece</span>
+              </div>
             </div>
+          </div>
 
-            <!-- Beverages -->
-            <div id="beverages" class="menu-category">
-                <h2>Beverages</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <img src="https://images.pexels.com/photos/15522898/pexels-photo-15522898.jpeg?_gl=1*1sc152x*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjgwNTIkajQkbDAkaDA." alt="Lassi">
-                        <h3>Lassi</h3>
-                        <p>Refreshing yogurt drink.</p>
-                        <span class="price">₹80 per glass</span>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.pexels.com/photos/20270270/pexels-photo-20270270.jpeg?_gl=1*1kjir2s*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjgxNjYkajI1JGwwJGgw" alt="Masala Chai">
-                        <h3>Masala Chai</h3>
-                        <p>Spiced tea with aromatic flavors.</p>
-                        <span class="price">₹50 per cup</span>
-                    </div>
-                </div>
+          <!-- Beverages -->
+          <div id="beverages" class="menu-category">
+            <h2>Beverages</h2>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img
+                  src="https://images.pexels.com/photos/15522898/pexels-photo-15522898.jpeg?_gl=1*1sc152x*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjgwNTIkajQkbDAkaDA."
+                  alt="Lassi"
+                />
+                <h3>Lassi</h3>
+                <p>Refreshing yogurt drink.</p>
+                <span class="price">₹80 per glass</span>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.pexels.com/photos/20270270/pexels-photo-20270270.jpeg?_gl=1*1kjir2s*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjgxNjYkajI1JGwwJGgw"
+                  alt="Masala Chai"
+                />
+                <h3>Masala Chai</h3>
+                <p>Spiced tea with aromatic flavors.</p>
+                <span class="price">₹50 per cup</span>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</section>
-
+      </div>
+    </section>
 
     <!-- Add Font Awesome CDN in your <head> or above footer -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-
-<!-- Footer Section -->
-<footer>
-  <div class="container">
-    <!-- Left Section -->
-    <div class="footer-col">
-      <img src="images/platinum plate.jpg" alt="" class="logo" />
-      <p>
-        Address: 2nd Floor, Rohini Layout Rd,<br />
-        opp. SHILPARAMAM, near Cyber Towers Signal,<br />
-        Surya Enclave, HITEC City,<br />
-        Hyderabad, Telangana 500081
-      </p>
-      <p class="phone">+91 8050575628</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-
-    <!-- Navigation -->
-    <div class="footer-col">
-      <h3>Navigation</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Services -->
-    <div class="footer-col">
-      <h3>Service</h3>
-      <ul>
-        <li><a href="#">Catering for Weddings</a></li>
-        <li><a href="#">Corporate Events</a></li>
-        <li><a href="#">Birthday Parties</a></li>
-        <li><a href="#">Outdoor Catering</a></li>
-        <li><a href="#">Custom Menus</a></li>
-      </ul>
-    </div>
-
-    <!-- Stay Connected -->
-    <div class="footer-col">
-      <h3>Stay Connected</h3>
-      <p>
-        Join our mailing list to receive the latest<br />
-        catering tips, offers, and event updates.
-      </p>
-      <form id="newsletter-form">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter Your Email Here"
-          required
-        />
-        <button type="submit">➤</button>
-      </form>
-      <a href="#" class="privacy">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
-
-<!-- WhatsApp Button -->
-<a
-  href="https://wa.me/918050575628"
-  target="_blank"
-  class="whatsapp-btn"
-  aria-label="WhatsApp"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="white"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-  </svg>
-</a>
 
-<!-- Scroll To Top Button -->
-<button class="scroll-top" aria-label="Scroll to top">↑</button>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <!-- Left Section -->
+        <div class="footer-col">
+          <img src="images/platinum plate.jpg" alt="" class="logo" />
+          <p>
+            Address: 2nd Floor, Rohini Layout Rd,<br />
+            opp. SHILPARAMAM, near Cyber Towers Signal,<br />
+            Surya Enclave, HITEC City,<br />
+            Hyderabad, Telangana 500081
+          </p>
+          <p class="phone">+91 8050575628</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
 
-<!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your EmailJS user ID
-  })();
-</script>
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
 
+        <!-- Services -->
+        <div class="footer-col">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="#">Catering for Weddings</a></li>
+            <li><a href="#">Corporate Events</a></li>
+            <li><a href="#">Birthday Parties</a></li>
+            <li><a href="#">Outdoor Catering</a></li>
+            <li><a href="#">Custom Menus</a></li>
+          </ul>
+        </div>
+
+        <!-- Stay Connected -->
+        <div class="footer-col">
+          <h3>Stay Connected</h3>
+          <p>
+            Join our mailing list to receive the latest<br />
+            catering tips, offers, and event updates.
+          </p>
+          <form id="newsletter-form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email Here"
+              required
+            />
+            <button type="submit">➤</button>
+          </form>
+          <a href="#" class="privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/918050575628"
+      target="_blank"
+      class="whatsapp-btn"
+      aria-label="WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="white"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
+        />
+      </svg>
+    </a>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your EmailJS user ID
+      })();
+    </script>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

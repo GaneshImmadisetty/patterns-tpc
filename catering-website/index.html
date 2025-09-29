@@ -80,17 +80,51 @@
 
 
       <!-- Navigation -->
-      <nav id="navMenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <!-- Navigation -->
+       
+<nav id="navMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+
+    <!-- Services with dropdown -->
+    <li class="dropdown">
+  <!-- Add class="dropdown-toggle" -->
+  <!-- Use href="javascript:void(0)" to stop navigation -->
+  <a href="javascript:void(0)" class="dropdown-toggle">Services ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="service1.html">Catering</a></li>
+    <li><a href="service2.html">Event Planning</a></li>
+    <li><a href="service3.html">Decorations</a></li>
+    <li><a href="service4.html">Custom Packages</a></li>
+  </ul>
+</li>
+
+
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener("click", function(e) {
+        e.preventDefault();   // Stop default link behavior
+        e.stopPropagation();  // ⬅️ Prevent event from closing nav
+        this.parentElement.classList.toggle("active");
+      });
+    });
+  });
+</script>
+
+
+
+
+
 
       <!-- Contact Info -->
       <div class="contact-info">
