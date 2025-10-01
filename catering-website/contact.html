@@ -83,59 +83,76 @@
       </div>
     </header>
 
-    <section id="contact-hero">
+    <!-- Hero Section -->
+    <section id="contact-hero" 
+      style="background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/contat.jpg') center/cover no-repeat; 
+             text-align:center; 
+             padding:70px 20px; 
+             color:white;">
       <div class="container">
-        <h1>Contact Us</h1>
-        <p>Reach out to us for inquiries and bookings.</p>
+        <h1 style="font-size:40px; margin-bottom:10px;">Contact Us</h1>
+        <p style="font-size:18px;">Reach out to us for inquiries and bookings.</p>
       </div>
     </section>
 
-    <section id="contact-content">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-form">
-            <h2>Send us a message</h2>
-            <form action="#" method="post">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn primary">Submit</button>
-            </form>
-          </div>
-          <!-- <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <p><strong>Phone:</strong> <a href="tel:+911234567890">+91 1234567890</a></p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/911234567890">+91 1234567890</a></p>
-                    <p><strong>Email:</strong> info@yourcatering.com</p>
-                    <p><strong>Address:</strong> 123 Main Street, City, State, PIN</p>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902!2d90.388!3d23.750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div> -->
+    <!-- Contact Section -->
+    <section id="contact-content" style="padding:60px 20px;">
+      <div class="container" style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; gap:40px; justify-content:center;">
+        
+        <!-- Contact Form -->
+        <div class="contact-form" style="flex:1; min-width:320px; background:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+          <h2 style="margin-bottom:20px; font-size:24px; color:#444;">Send us a message</h2>
+          <form action="#" method="post" style="display:flex; flex-direction:column; gap:15px;">
+            
+            <div class="form-group">
+              <label for="name" style="font-weight:bold;">Name</label>
+              <input type="text" id="name" name="name" required 
+                style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px;"/>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" style="font-weight:bold;">Phone</label>
+              <input type="tel" id="phone" name="phone" required 
+                style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px;"/>
+            </div>
+
+            <div class="form-group">
+              <label for="email" style="font-weight:bold;">Email</label>
+              <input type="email" id="email" name="email" required 
+                style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px;"/>
+            </div>
+
+            <div class="form-group">
+              <label for="message" style="font-weight:bold;">Message</label>
+              <textarea id="message" name="message" rows="5" required 
+                style="width:100%; padding:12px; border:1px solid #ccc; border-radius:5px;"></textarea>
+            </div>
+
+            <button type="submit" 
+              style="padding:14px; background:#d4af37; color:white; font-size:16px; border:none; border-radius:5px; cursor:pointer; transition:0.3s;">
+              Submit
+            </button>
+          </form>
         </div>
+
+        <!-- Contact Info -->
+        <!-- Contact Info -->
+<div class="contact-details" style="flex:1; min-width:320px; background:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+  <h2 style="margin-bottom:20px; font-size:24px; color:#444;">Contact Information</h2>
+  <p><strong>Phone:</strong> <a href="tel:+911234567890" style="color:#d4af37; text-decoration:none;">+91 1234567890</a></p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/911234567890" style="color:#25d366; text-decoration:none;">+91 1234567890</a></p>
+  <p><strong>Email:</strong> <a href="mailto:info@yourcatering.com" style="color:#444; text-decoration:none;">info@yourcatering.com</a></p>
+  <p><strong>Address:</strong> 123 Main Street, Hyderabad, Telangana</p>
+  <div class="map" style="margin-top:15px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.216200204945!2d78.38419537369089!3d17.44936320101965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93170353b1c9%3A0x20fc4405c165c3a0!2sThe%20Patterns%20Company%20-%20Best%20Digital%20Marketing%20Agency%20in%20Hyderabad!5e0!3m2!1sen!2sin!4v1759300991407!5m2!1sen!2sin" width="470" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
       </div>
     </section>
 
     <!-- Add Font Awesome CDN in your <head> or above footer -->
-<<<<<<< HEAD
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -234,76 +251,10 @@
 >>>>>>> 39bf31a03738cd7eb69362711dca4b310806d3a6
     />
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="container">
-        <!-- Left Section -->
-        <div class="footer-col">
-          <img src="images/platinum plate.jpg" alt="" class="logo" />
-          <p>
-            Address: 2nd Floor, Rohini Layout Rd,<br />
-            opp. SHILPARAMAM, near Cyber Towers Signal,<br />
-            Surya Enclave, HITEC City,<br />
-            Hyderabad, Telangana 500081
-          </p>
-          <p class="phone">+91 8050575628</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
+    
 
-        <!-- Navigation -->
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="footer-col">
-          <h3>Service</h3>
-          <ul>
-            <li><a href="#">Catering for Weddings</a></li>
-            <li><a href="#">Corporate Events</a></li>
-            <li><a href="#">Birthday Parties</a></li>
-            <li><a href="#">Outdoor Catering</a></li>
-            <li><a href="#">Custom Menus</a></li>
-          </ul>
-        </div>
-
-        <!-- Stay Connected -->
-        <div class="footer-col">
-          <h3>Stay Connected</h3>
-          <p>
-            Join our mailing list to receive the latest<br />
-            catering tips, offers, and event updates.
-          </p>
-          <form id="newsletter-form">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter Your Email Here"
-              required
-            />
-            <button type="submit">➤</button>
-          </form>
-          <a href="#" class="privacy">Privacy Policy</a>
-        </div>
-      </div>
-    </footer>
-
+<!-- Scroll To Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
     <!-- WhatsApp Button -->
     <a
       href="https://wa.me/918050575628"

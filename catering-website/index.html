@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Platinum Plate | Premium Catering Services in Hyderabad, serving exquisite cuisine with elegance, taste, and unforgettable hospitality.</title>
-    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg">
-    <meta name="description" content="Experience the finest catering services for weddings, birthdays, corporate events, and more. Fresh, hygienic, and delicious food delivered to your doorstep.">
-    <meta name="keywords" content="catering, wedding catering, birthday parties, corporate events, veg catering, non-veg catering">
-    <meta name="author" content="The Platinum Plate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Platinum Plate | Premium Catering Services in Hyderabad, serving
+      exquisite cuisine with elegance, taste, and unforgettable hospitality.
+    </title>
+    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg" />
+    <meta
+      name="description"
+      content="Experience the finest catering services for weddings, birthdays, corporate events, and more. Fresh, hygienic, and delicious food delivered to your doorstep."
+    />
+    <meta
+      name="keywords"
+      content="catering, wedding catering, birthday parties, corporate events, veg catering, non-veg catering"
+    />
+    <meta name="author" content="The Platinum Plate" />
     <!-- Schema Markup for Local Business -->
     <script type="application/ld+json">
-    {
+      {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Your Catering Business",
         "image": "https://example.com/images/logo.png",
         "telephone": "+91 1234567890",
         "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "123 Main Street",
-            "addressLocality": "City",
-            "addressRegion": "State",
-            "postalCode": "123456",
-            "addressCountry": "IN"
+          "@type": "PostalAddress",
+          "streetAddress": "123 Main Street",
+          "addressLocality": "City",
+          "addressRegion": "State",
+          "postalCode": "123456",
+          "addressCountry": "IN"
         },
         "url": "https://yourcateringbusiness.com",
         "sameAs": [
-            "https://www.facebook.com/yourcatering",
-            "https://www.instagram.com/yourcatering"
+          "https://www.facebook.com/yourcatering",
+          "https://www.instagram.com/yourcatering"
         ],
         "priceRange": "$$",
         "servesCuisine": ["Indian", "Vegetarian", "Non-Vegetarian"]
-    }
+      }
     </script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- <header>
         <div class="container">
             <div class="logo">
                 <img src="images/platinum plate.jpg" class="platinum-image-logo" alt="">
             </div> -->
-            <!-- Place this after logo inside header .container -->
+    <!-- Place this after logo inside header .container -->
 
-            <!-- <nav>
+    <!-- <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -54,178 +63,174 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav> -->
-            <!-- <div class="contact-info">
+    <!-- <div class="contact-info">
                 <a href="tel:+911234567890">Call Now: +91 1234567890</a>
                 <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
             </div>
         </div>
     </header> -->
 
-     <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-        <img src="images/platinum plate.jpg" class="platinum-image-logo" alt="The
-         Platinum Plate" />
-         </a>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/platinum plate.jpg"
+              class="platinum-image-logo"
+              alt="The
+         Platinum Plate"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation -->
+        <!-- Navigation -->
+
+        <nav id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+            <!-- Services with dropdown -->
+            <li class="dropdown">
+              <!-- Add class="dropdown-toggle" -->
+              <!-- Use href="javascript:void(0)" to stop navigation -->
+              <a href="javascript:void(0)" class="dropdown-toggle"
+                >Services ▾</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="service1.html">Catering for Weddings</a></li>
+                <li><a href="service2.html">Corporate Events</a></li>
+                <li><a href="service3.html">Birthday Parties</a></li>
+                <li><a href="service4.html">Outdoor Catering</a></li>
+                <li><a href="service5.html">Custom Menus</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggles =
+              document.querySelectorAll(".dropdown-toggle");
+
+            dropdownToggles.forEach((toggle) => {
+              toggle.addEventListener("click", function (e) {
+                e.preventDefault(); // Stop default link behavior
+                e.stopPropagation(); // ⬅️ Prevent event from closing nav
+                this.parentElement.classList.toggle("active");
+              });
+            });
+          });
+        </script>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <a href="tel:+911234567890">Call Now: +91 1234567890</a>
+          <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
+        </div>
       </div>
+    </header>
 
-      <!-- Hamburger Button -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-
-      <!-- Navigation -->
-      <!-- Navigation -->
-       
-<nav id="navMenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-
-    <!-- Services with dropdown -->
-    <li class="dropdown">
-  <!-- Add class="dropdown-toggle" -->
-  <!-- Use href="javascript:void(0)" to stop navigation -->
-  <a href="javascript:void(0)" class="dropdown-toggle">Services ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="service1.html">Catering for Weddings</a></li>
-    <li><a href="service2.html">Corporate Events</a></li>
-    <li><a href="service3.html">Birthday Parties</a></li>
-    <li><a href="service4.html">Outdoor Catering</a></li>
-    <li><a href="service5.html">Custom Menus</a></li>
-
-  </ul>
-</li>
-
-
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-    dropdownToggles.forEach(toggle => {
-      toggle.addEventListener("click", function(e) {
-        e.preventDefault();   // Stop default link behavior
-        e.stopPropagation();  // ⬅️ Prevent event from closing nav
-        this.parentElement.classList.toggle("active");
-      });
-    });
-  });
-</script>
-
-
-
-
-
-
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <a href="tel:+911234567890">Call Now: +91 1234567890</a>
-        <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
-      </div>
-    </div>
-  </header>
-
-
-    
     <!-- Hero Section -->
-<section id="hero">
-    <div class="hero-container">
+    <section id="hero">
+      <div class="hero-container">
         <div class="hero-image"></div>
         <div class="hero-content">
-            <h2>We Bring the Best Spices to Life</h2>
-            <p>Enjoy the highest standard of catering for your special events. From weddings to corporate gatherings, we deliver exquisite food experiences.</p>
-            <div class="cta-buttons">
-                <a href="tel:+911234567890" class="btn primary">Call Now</a>
-                <a href="contact.html" class="btn secondary">Book Now</a>
-            </div>
+          <h2>We Bring the Best Spices to Life</h2>
+          <p>
+            Enjoy the highest standard of catering for your special events. From
+            weddings to corporate gatherings, we deliver exquisite food
+            experiences.
+          </p>
+          <div class="cta-buttons">
+            <a href="tel:+911234567890" class="btn primary">Call Now</a>
+            <a href="contact.html" class="btn secondary">Book Now</a>
+          </div>
         </div>
-    </div>
-</section>
-
-
+      </div>
+    </section>
 
     <section id="highlights">
-        <div class="container">
-            <h1 class="our-service-head">Our Services Highlights</h1>
+      <div class="container">
+        <h1 class="our-service-head">Our Services Highlights</h1>
 
-
-            <section class="wcu-flex-section">
-                <div class="wcu-left">
-                    <div class="wcu-section pt-5 pb-5" id="wcuSection">
-                    <div class="container">
-                        <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="wcu-card p-3 mb-3">
-                            <img
-                                src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/food-serve.png"
-                                class="wcu-card-image"
-                            />
-                            <h1 class="wcu-card-title mt-3">Food Service</h1>
-                            <p class="wcu-card-description">
-                                Experience fine dining at the comfort of your home. All our
-                                orders are carefully packed and arranged to give you the nothing
-                                less than perfect.
-                            </p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-4">
-                            <div class="wcu-card p-3 mb-3">
-                            <img
-                                src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/fruits-img.png"
-                                class="wcu-card-image"
-                            />
-                            <h1 class="wcu-card-title mt-3">Fresh Food</h1>
-                            <p class="wcu-card-description">
-                                The Fresh Food group provides fresh-cut fruits and vegetables
-                                directly picked from our partner farms and farm houses so that
-                                you always get them tree to plate.
-                            </p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-4">
-                            <div class="wcu-card p-3 mb-3">
-                            <img
-                                src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/offers-img.png"
-                                class="wcu-card-image"
-                            />
-                            <h1 class="wcu-card-title mt-3">Best Offers</h1>
-                            <p class="wcu-card-description">
-                                Food Coupons & Offers upto
-                                <span class="offers">50% OFF</span>
-                                and Exclusive Promo Codes on All Online Food Orders.
-                            </p>
-                            </div>
-                        </div>
-                        </div>
+        <section class="wcu-flex-section">
+          <div class="wcu-left">
+            <div class="wcu-section pt-5 pb-5" id="wcuSection">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                      <img
+                        src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/food-serve.png"
+                        class="wcu-card-image"
+                      />
+                      <h1 class="wcu-card-title mt-3">Food Service</h1>
+                      <p class="wcu-card-description">
+                        Experience fine dining at the comfort of your home. All
+                        our orders are carefully packed and arranged to give you
+                        the nothing less than perfect.
+                      </p>
                     </div>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                      <img
+                        src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/fruits-img.png"
+                        class="wcu-card-image"
+                      />
+                      <h1 class="wcu-card-title mt-3">Fresh Food</h1>
+                      <p class="wcu-card-description">
+                        The Fresh Food group provides fresh-cut fruits and
+                        vegetables directly picked from our partner farms and
+                        farm houses so that you always get them tree to plate.
+                      </p>
                     </div>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                      <img
+                        src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/offers-img.png"
+                        class="wcu-card-image"
+                      />
+                      <h1 class="wcu-card-title mt-3">Best Offers</h1>
+                      <p class="wcu-card-description">
+                        Food Coupons & Offers upto
+                        <span class="offers">50% OFF</span>
+                        and Exclusive Promo Codes on All Online Food Orders.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <!-- Right side image -->
-                <div class="wcu-right">
-                    <img
-                    src="https://i.pinimg.com/1200x/c9/91/24/c991241e996d391d80dadb4363532b5e.jpg"
-                    alt="Right side image"
-                    />
-                </div>
-            </section>
+          <!-- Right side image -->
+          <div class="wcu-right">
+            <img
+              src="https://i.pinimg.com/1200x/c9/91/24/c991241e996d391d80dadb4363532b5e.jpg"
+              alt="Right side image"
+            />
+          </div>
+        </section>
 
-
-
-            <!-- <div class="highlights-grid">
+        <!-- <div class="highlights-grid">
                 <div class="highlight">
                     <img src="https://picsum.photos/300/200?random=1" alt="Wedding Catering">
                     <h3>Wedding Catering</h3>
@@ -242,181 +247,241 @@
                     <p>Professional catering for meetings, conferences, and team building.</p>
                 </div>
             </div> -->
-        </div>
+      </div>
     </section>
-<!-- Our Specials -->
+    <!-- Our Specials -->
     <h1 class="our-special-head">Our Specials</h1>
     <section class="feature-row">
-  <div class="feature-box">
-    <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500" alt="Delicious Veg Platter">
-    <h3>Veg Platters</h3>
-    <p>Fresh, healthy vegetarian spreads for every celebration.</p>
-  </div>
-  <div class="feature-box">
-    <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500" alt="Tasty Non-Veg Meals">
-    <h3>Non-Veg Specials</h3>
-    <p>Savor our premium non-veg dishes and signature flavors.</p>
-  </div>
-  <div class="feature-box">
-    <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500" alt="Elegant Desserts">
-    <h3>Dessert Spread</h3>
-    <p>Finish in style with our elegant dessert collection.</p>
-  </div>
-</section>
-
-
-<!-- Catering-packages -->
-<h1 class="catering-package-head">Customer Favorites</h1>
-<p class="catering-package-para">These bestselling products are loved by our community for their proven results and luxurious feel</p>
-<section class="catering-cards-section">
-  <div class="catering-cards-container">
-    <!-- Card Example -->
-    <div class="catering-card">
-      <div class="card-badges">
-        <span class="badge bestseller">Bestseller</span>
-        <span class="badge sale">Sale</span>
+      <div class="feature-box">
+        <img
+          src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500"
+          alt="Delicious Veg Platter"
+        />
+        <h3>Veg Platters</h3>
+        <p>Fresh, healthy vegetarian spreads for every celebration.</p>
       </div>
-      <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500" alt="Premium Wedding Package" class="card-img" />
-      <h3 class="card-title">Premium Wedding Package</h3>
-      <p class="card-description">Elegant spread for up to 200 guests, includes starters, main course, desserts & drinks.</p>
-      <div class="card-rating">
-        <span>★★★★☆</span> (234)
+      <div class="feature-box">
+        <img
+          src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500"
+          alt="Tasty Non-Veg Meals"
+        />
+        <h3>Non-Veg Specials</h3>
+        <p>Savor our premium non-veg dishes and signature flavors.</p>
       </div>
-      <div class="card-price"><span class="price-discount">₹46,999</span> <del>₹59,999</del></div>
-    </div>
-    <!-- Repeat similar cards for other packages -->
-    <div class="catering-card">
-      <div class="card-badges">
-        <span class="badge bestseller">Bestseller</span>
+      <div class="feature-box">
+        <img
+          src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500"
+          alt="Elegant Desserts"
+        />
+        <h3>Dessert Spread</h3>
+        <p>Finish in style with our elegant dessert collection.</p>
       </div>
-      <img src="https://images.pexels.com/photos/8134134/pexels-photo-8134134.jpeg?auto=compress&w=500" alt="Corporate Event Catering" class="card-img" />
-      <h3 class="card-title">Corporate Event Catering</h3>
-      <p class="card-description">Customizable menus for corporate meets and team celebrations, veg/non-veg options.</p>
-      <div class="card-rating">
-        <span>★★★★☆</span> (169)
-      </div>
-      <div class="card-price">₹25,499</div>
-    </div>
-    <!-- Add more cards as needed -->
-    <div class="catering-card">
-      <div class="card-badges">
-        <span class="badge sale">Sale</span>
-      </div>
-      <img src="https://images.pexels.com/photos/18281680/pexels-photo-18281680.jpeg?auto=compress&w=500" alt="Birthday Party Special" class="card-img" />
-      <h3 class="card-title">Birthday Party Special</h3>
-      <p class="card-description">Fun and delicious menu for kids and adults, including snacks, main course and cake.</p>
-      <div class="card-rating">
-        <span>★★★☆☆</span> (88)
-      </div>
-      <div class="card-price"><span class="price-discount">₹18,499</span> <del>₹24,999</del></div>
-    </div>
-    <!-- More cards... -->
-  </div>
-</section>
+    </section>
 
-
-
-
-<!-- slider-section -->
-  <h1 class="choose-from-head">Choose from Our Delicious Varieties</h1>
-    <section class="custom-slider">
-  <div class="slider-track">
-    <div class="slide">
-      <img src="https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?_gl=1*1v023gq*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTYwNTkkajU5JGwwJGgw" alt="Product 1">
-      <p>Soft Drinks</p>
-    </div>
-    <div class="slide">
-      <img src="https://images.pexels.com/photos/8134134/pexels-photo-8134134.jpeg?_gl=1*oyv2pd*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTYxNjMkajIwJGwwJGgw" alt="Product 2">
-      <p>Milk Products</p>
-    </div>
-    <div class="slide">
-      <img src="https://images.pexels.com/photos/18281680/pexels-photo-18281680.jpeg?_gl=1*1y2hsvw*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTYzMjAkajU5JGwwJGgw" alt="Product 3">
-      <p>Catering Specials</p>
-    </div>
-    <div class="slide">
-      <img src="https://images.pexels.com/photos/28976235/pexels-photo-28976235.jpeg?_gl=1*10ccmi0*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTY0MzYkajU5JGwwJGgw" alt="Product 4">
-      <p>Starter Platters</p>
-    </div>
-    <div class="slide">
-      <img src="https://images.pexels.com/photos/28260046/pexels-photo-28260046.jpeg?_gl=1*13gj6o6*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTY1MjckajU5JGwwJGgw" alt="Product 5">
-      <p>Desserts</p>
-    </div>
-    <div class="slide">
-      <img src="https://images.pexels.com/photos/7648051/pexels-photo-7648051.jpeg?_gl=1*1v10ucw*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTY2ODYkajU5JGwwJGgw" alt="Product 6">
-      <p>Event Packages</p>
-    </div>
-  </div>
-  <button class="slider-nav prev">&#10094;</button>
-  <button class="slider-nav next">&#10095;</button>
-</section>
-
-
-<!-- Testimonial -->
-<section id="testimonials-hero">
-        <div class="container">
-            <h1>Testimonials</h1>
-            <p>What our happy customers say about us.</p>
+    <!-- Catering-packages -->
+    <h1 class="catering-package-head">Customer Favorites</h1>
+    <p class="catering-package-para">
+      These bestselling products are loved by our community for their proven
+      results and luxurious feel
+    </p>
+    <section class="catering-cards-section">
+      <div class="catering-cards-container">
+        <!-- Card Example -->
+        <div class="catering-card">
+          <div class="card-badges">
+            <span class="badge bestseller">Bestseller</span>
+            <span class="badge sale">Sale</span>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=500"
+            alt="Premium Wedding Package"
+            class="card-img"
+          />
+          <h3 class="card-title">Premium Wedding Package</h3>
+          <p class="card-description">
+            Elegant spread for up to 200 guests, includes starters, main course,
+            desserts & drinks.
+          </p>
+          <div class="card-rating"><span>★★★★☆</span> (234)</div>
+          <div class="card-price">
+            <span class="price-discount">₹46,999</span> <del>₹59,999</del>
+          </div>
         </div>
+        <!-- Repeat similar cards for other packages -->
+        <div class="catering-card">
+          <div class="card-badges">
+            <span class="badge bestseller">Bestseller</span>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/8134134/pexels-photo-8134134.jpeg?auto=compress&w=500"
+            alt="Corporate Event Catering"
+            class="card-img"
+          />
+          <h3 class="card-title">Corporate Event Catering</h3>
+          <p class="card-description">
+            Customizable menus for corporate meets and team celebrations,
+            veg/non-veg options.
+          </p>
+          <div class="card-rating"><span>★★★★☆</span> (169)</div>
+          <div class="card-price">₹25,499</div>
+        </div>
+        <!-- Add more cards as needed -->
+        <div class="catering-card">
+          <div class="card-badges">
+            <span class="badge sale">Sale</span>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/18281680/pexels-photo-18281680.jpeg?auto=compress&w=500"
+            alt="Birthday Party Special"
+            class="card-img"
+          />
+          <h3 class="card-title">Birthday Party Special</h3>
+          <p class="card-description">
+            Fun and delicious menu for kids and adults, including snacks, main
+            course and cake.
+          </p>
+          <div class="card-rating"><span>★★★☆☆</span> (88)</div>
+          <div class="card-price">
+            <span class="price-discount">₹18,499</span> <del>₹24,999</del>
+          </div>
+        </div>
+        <!-- More cards... -->
+      </div>
+    </section>
+
+    <!-- slider-section -->
+    <h1 class="choose-from-head">Choose from Our Delicious Varieties</h1>
+    <section class="custom-slider">
+      <div class="slider-track">
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?_gl=1*1v023gq*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTYwNTkkajU5JGwwJGgw"
+            alt="Product 1"
+          />
+          <p>Soft Drinks</p>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/8134134/pexels-photo-8134134.jpeg?_gl=1*oyv2pd*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTYxNjMkajIwJGwwJGgw"
+            alt="Product 2"
+          />
+          <p>Milk Products</p>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/18281680/pexels-photo-18281680.jpeg?_gl=1*1y2hsvw*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTYzMjAkajU5JGwwJGgw"
+            alt="Product 3"
+          />
+          <p>Catering Specials</p>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/28976235/pexels-photo-28976235.jpeg?_gl=1*10ccmi0*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTY0MzYkajU5JGwwJGgw"
+            alt="Product 4"
+          />
+          <p>Starter Platters</p>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/28260046/pexels-photo-28260046.jpeg?_gl=1*13gj6o6*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTY1MjckajU5JGwwJGgw"
+            alt="Product 5"
+          />
+          <p>Desserts</p>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/7648051/pexels-photo-7648051.jpeg?_gl=1*1v10ucw*_ga*MTIzNDA2MjYyNi4xNzU4Nzk1OTg0*_ga_8JE65Q40S6*czE3NTg3OTU5ODQkbzEkZzEkdDE3NTg3OTY2ODYkajU5JGwwJGgw"
+            alt="Product 6"
+          />
+          <p>Event Packages</p>
+        </div>
+      </div>
+      <button class="slider-nav prev">&#10094;</button>
+      <button class="slider-nav next">&#10095;</button>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonials-hero">
+      <div class="container">
+        <h1>Testimonials</h1>
+        <p>What our happy customers say about us.</p>
+      </div>
     </section>
 
     <section id="testimonials-list">
-        <div class="container">
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <img src="https://picsum.photos/100/100?random=15" alt="Customer 1">
-                    <div class="rating">★★★★★</div>
-                    <p>"Amazing food and excellent service. Our wedding was perfect thanks to Your Catering!"</p>
-                    <cite>- John Doe</cite>
-                </div>
-                <div class="testimonial">
-                    <img src="https://picsum.photos/100/100?random=16" alt="Customer 2">
-                    <div class="rating">★★★★★</div>
-                    <p>"Delicious vegetarian options for our corporate event. Highly recommended."</p>
-                    <cite>- Jane Smith</cite>
-                </div>
-                <div class="testimonial">
-                    <img src="https://picsum.photos/100/100?random=17" alt="Customer 3">
-                    <div class="rating">★★★★☆</div>
-                    <p>"Great birthday party catering. The desserts were outstanding."</p>
-                    <cite>- Bob Johnson</cite>
-                </div>
-            </div>
+      <div class="container">
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <img
+              src="https://picsum.photos/100/100?random=15"
+              alt="Customer 1"
+            />
+            <div class="rating">★★★★★</div>
+            <p>
+              "Amazing food and excellent service. Our wedding was perfect
+              thanks to Your Catering!"
+            </p>
+            <cite>- John Doe</cite>
+          </div>
+          <div class="testimonial">
+            <img
+              src="https://picsum.photos/100/100?random=16"
+              alt="Customer 2"
+            />
+            <div class="rating">★★★★★</div>
+            <p>
+              "Delicious vegetarian options for our corporate event. Highly
+              recommended."
+            </p>
+            <cite>- Jane Smith</cite>
+          </div>
+          <div class="testimonial">
+            <img
+              src="https://picsum.photos/100/100?random=17"
+              alt="Customer 3"
+            />
+            <div class="rating">★★★★☆</div>
+            <p>
+              "Great birthday party catering. The desserts were outstanding."
+            </p>
+            <cite>- Bob Johnson</cite>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- Add Font Awesome CDN in your <head> or above footer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-<!-- Add Font Awesome CDN in your <head> or above footer -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <!-- Left Section -->
+        <div class="footer-col">
+          <img src="images/platinum plate.jpg" alt="" class="logo" />
+          <p>
+            Address: 2nd Floor, Rohini Layout Rd,<br />
+            opp. SHILPARAMAM, near Cyber Towers Signal,<br />
+            Surya Enclave, HITEC City,<br />
+            Hyderabad, Telangana 500081
+          </p>
+          <p class="phone">+91 8050575628</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
 
-<!-- Footer Section -->
-<footer>
-  <div class="container">
-    <!-- Left Section -->
-    <div class="footer-col">
-      <img src="images/platinum plate.jpg" alt="" class="logo" />
-      <p>
-        Address: 2nd Floor, Rohini Layout Rd,<br />
-        opp. SHILPARAMAM, near Cyber Towers Signal,<br />
-        Surya Enclave, HITEC City,<br />
-        Hyderabad, Telangana 500081
-      </p>
-      <p class="phone">+91 8050575628</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-
-    <!-- Navigation -->
-    <div class="footer-col">
-      <h3>Navigation</h3>
-      <!-- <ul>
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <!-- <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Services</a></li>
@@ -426,86 +491,82 @@
         <li><a href="#">Contact</a></li>
       </ul> -->
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
 
-    </div>
+        <!-- Services -->
+        <div class="footer-col">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="#">Catering for Weddings</a></li>
+            <li><a href="#">Corporate Events</a></li>
+            <li><a href="#">Birthday Parties</a></li>
+            <li><a href="#">Outdoor Catering</a></li>
+            <li><a href="#">Custom Menus</a></li>
+          </ul>
+        </div>
 
-    <!-- Services -->
-    <div class="footer-col">
-      <h3>Service</h3>
-      <ul>
-        <li><a href="#">Catering for Weddings</a></li>
-        <li><a href="#">Corporate Events</a></li>
-        <li><a href="#">Birthday Parties</a></li>
-        <li><a href="#">Outdoor Catering</a></li>
-        <li><a href="#">Custom Menus</a></li>
-      </ul>
-    </div>
+        <!-- Stay Connected -->
+        <div class="footer-col">
+          <h3>Stay Connected</h3>
+          <p>
+            Join our mailing list to receive the latest<br />
+            catering tips, offers, and event updates.
+          </p>
+          <form id="newsletter-form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email Here"
+              required
+            />
+            <button type="submit">➤</button>
+          </form>
+          <a href="#" class="privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
 
-    <!-- Stay Connected -->
-    <div class="footer-col">
-      <h3>Stay Connected</h3>
-      <p>
-        Join our mailing list to receive the latest<br />
-        catering tips, offers, and event updates.
-      </p>
-      <form id="newsletter-form">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter Your Email Here"
-          required
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/918050575628"
+      target="_blank"
+      class="whatsapp-btn"
+      aria-label="WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="white"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
         />
-        <button type="submit">➤</button>
-      </form>
-      <a href="#" class="privacy">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
+      </svg>
+    </a>
 
-<!-- WhatsApp Button -->
-<a
-  href="https://wa.me/918050575628"
-  target="_blank"
-  class="whatsapp-btn"
-  aria-label="WhatsApp"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="white"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
-    />
-  </svg>
-</a>
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
 
-<!-- Scroll To Top Button -->
-<button class="scroll-top" aria-label="Scroll to top">↑</button>
-
-<!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your EmailJS user ID
-  })();
-</script>
-
-
-
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your EmailJS user ID
+      })();
+    </script>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
