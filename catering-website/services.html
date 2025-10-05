@@ -11,41 +11,86 @@
 <body>
      <!-- Header -->
   <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-        <img src="images/platinum plate.jpg" class="platinum-image-logo" alt="The
-         Platinum Plate" />
-         </a>
-      </div>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/platinum plate.jpg"
+              class="platinum-image-logo"
+              alt="The
+         Platinum Plate"
+            />
+          </a>
+        </div>
 
-      <!-- Hamburger Button -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-      <!-- Navigation -->
-      <nav id="navMenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <!-- Navigation -->
+        <!-- Navigation -->
 
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <a href="tel:+911234567890">Call Now: +91 1234567890</a>
-        <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
+        <nav id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+            <!-- Services with dropdown -->
+            <li class="dropdown">
+              <!-- Add class="dropdown-toggle" -->
+              <!-- Use href="javascript:void(0)" to stop navigation -->
+              <a href="javascript:void(0)" class="dropdown-toggle"
+                >Services ▾</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="CateringforWeddings.html">Catering for Weddings</a></li>
+                <li><a href="CorporateEvents.html">Corporate Events</a></li>
+                <li><a href="BirthdayParties.html">Birthday Parties</a></li>
+                <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
+                <li><a href="CustomMenus.html">Custom Menus</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+  // Mobile menu toggle
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+
+  // Dropdown toggle for mobile
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      // Only run on mobile
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        this.parentElement.classList.toggle("active");
+      }
+    });
+  });
+});
+</script>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <a href="tel:+911234567890">Call Now: +91 1234567890</a>
+          <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <section id="services-hero">
         <div class="container">
