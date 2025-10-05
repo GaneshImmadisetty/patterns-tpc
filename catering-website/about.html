@@ -1,237 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Platinum Plate | Premium Catering Services in Hyderabad, serving exquisite cuisine with elegance, taste, and unforgettable hospitality.</title>
-    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg">
-    <meta name="description" content="Learn about our story, mission, values, and commitment to providing the best catering services.">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-     <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-        <img src="images/platinum plate.jpg" class="platinum-image-logo" alt="The
-         Platinum Plate" />
-         </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Platinum Plate | Premium Catering Services in Hyderabad, serving
+      exquisite cuisine with elegance, taste, and unforgettable hospitality.
+    </title>
+    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg" />
+    <meta
+      name="description"
+      content="Learn about our story, mission, values, and commitment to providing the best catering services."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/platinum plate.jpg"
+              class="platinum-image-logo"
+              alt="The
+         Platinum Plate"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+            <!-- Services with dropdown -->
+            <li class="dropdown">
+              <!-- Add class="dropdown-toggle" -->
+              <!-- Use href="javascript:void(0)" to stop navigation -->
+              <a href="javascript:void(0)" class="dropdown-toggle"
+                >Services ▾</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="CateringforWeddings.html">Catering for Weddings</a>
+                </li>
+                <li><a href="CorporateEvents.html">Corporate Events</a></li>
+                <li><a href="BirthdayParties.html">Birthday Parties</a></li>
+                <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
+                <li><a href="CustomMenus.html">Custom Menus</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggles =
+              document.querySelectorAll(".dropdown-toggle");
+
+            dropdownToggles.forEach((toggle) => {
+              toggle.addEventListener("click", function (e) {
+                e.preventDefault(); // Stop default link behavior
+                e.stopPropagation(); // ⬅️ Prevent event from closing nav
+                this.parentElement.classList.toggle("active");
+              });
+            });
+          });
+        </script>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <a href="tel:+911234567890">Call Now: +91 1234567890</a>
+          <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
+        </div>
       </div>
-
-      <!-- Hamburger Button -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- Navigation -->
-<nav id="navMenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-
-    <!-- Services with dropdown -->
-    <li class="dropdown">
-  <!-- Add class="dropdown-toggle" -->
-  <!-- Use href="javascript:void(0)" to stop navigation -->
-  <a href="javascript:void(0)" class="dropdown-toggle">Services ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="service1.html">Catering for Weddings</a></li>
-      <li><a href="service2.html">Corporate Events</a></li>
-      <li><a href="service3.html">Birthday Parties</a></li>
-      <li><a href="service4.html">Outdoor Catering</a></li>
-      <li><a href="service5.html">Custom Menus</a></li>
-
-  </ul>
-</li>
-
-
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-    dropdownToggles.forEach(toggle => {
-      toggle.addEventListener("click", function(e) {
-        e.preventDefault();   // Stop default link behavior
-        e.stopPropagation();  // ⬅️ Prevent event from closing nav
-        this.parentElement.classList.toggle("active");
-      });
-    });
-  });
-</script>
-
-
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <a href="tel:+911234567890">Call Now: +91 1234567890</a>
-        <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
-      </div>
-    </div>
-  </header>
+    </header>
 
     <section id="about-hero">
-        <div class="container">
-            <h1>About Us</h1>
-            <p>Discover the story behind our passion for exceptional catering.</p>
-        </div>
+      <div class="container">
+        <h1>About Us</h1>
+        <p>Discover the story behind our passion for exceptional catering.</p>
+      </div>
     </section>
 
     <section id="story">
-        <div class="container">
-            <div class="story-content">
-                <div class="text">
-                    <h2>Our Story</h2>
-                    <p>Founded in 2023, The Platinum Plate has been serving delicious, hygienic food to families and businesses alike. What started as a small family venture has grown into a trusted name in catering.</p>
-                </div>
-                <div class="image">
-                    <img src="https://www.therailnj.com/uploads/1/4/0/2/140207292/published/catering3_1.jpg" alt="Our Team">
-                </div>
-            </div>
+      <div class="container">
+        <div class="story-content">
+          <div class="text">
+            <h2>Our Story</h2>
+            <p>
+              Founded in 2023, The Platinum Plate has been serving delicious,
+              hygienic food to families and businesses alike. What started as a
+              small family venture has grown into a trusted name in catering.
+            </p>
+          </div>
+          <div class="image">
+            <img
+              src="https://www.therailnj.com/uploads/1/4/0/2/140207292/published/catering3_1.jpg"
+              alt="Our Team"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="mission-values">
-        <div class="container">
-            <div class="mv-grid">
-                <div class="mv-item">
-                    <h3>Mission</h3>
-                    <p>To provide high-quality, fresh, and delicious food that brings joy to every event.</p>
-                </div>
-                <div class="mv-item">
-                    <h3>Values</h3>
-                    <ul>
-                        <li>Quality & Hygiene</li>
-                        <li>Customer Satisfaction</li>
-                        <li>Innovation</li>
-                        <li>Integrity</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="mv-grid">
+          <div class="mv-item">
+            <h3>Mission</h3>
+            <p>
+              To provide high-quality, fresh, and delicious food that brings joy
+              to every event.
+            </p>
+          </div>
+          <div class="mv-item">
+            <h3>Values</h3>
+            <ul>
+              <li>Quality & Hygiene</li>
+              <li>Customer Satisfaction</li>
+              <li>Innovation</li>
+              <li>Integrity</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-    
-
-<!-- Add Font Awesome CDN in your <head> or above footer -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-
-<!-- Footer Section -->
-<footer>
-  <div class="container">
-    <!-- Left Section -->
-    <div class="footer-col">
-      <img src="images/platinum plate.jpg" alt="" class="logo" />
-      <p>
-        Address: 2nd Floor, Rohini Layout Rd,<br />
-        opp. SHILPARAMAM, near Cyber Towers Signal,<br />
-        Surya Enclave, HITEC City,<br />
-        Hyderabad, Telangana 500081
-      </p>
-      <p class="phone">+91 8050575628</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-
-    <!-- Navigation -->
-    <div class="footer-col">
-      <h3>Navigation</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Services -->
-    <div class="footer-col">
-      <h3>Service</h3>
-      <ul>
-        <li><a href="#">Catering for Weddings</a></li>
-        <li><a href="#">Corporate Events</a></li>
-        <li><a href="#">Birthday Parties</a></li>
-        <li><a href="#">Outdoor Catering</a></li>
-        <li><a href="#">Custom Menus</a></li>
-      </ul>
-    </div>
-
-    <!-- Stay Connected -->
-    <div class="footer-col">
-      <h3>Stay Connected</h3>
-      <p>
-        Join our mailing list to receive the latest<br />
-        catering tips, offers, and event updates.
-      </p>
-      <form id="newsletter-form">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter Your Email Here"
-          required
-        />
-        <button type="submit">➤</button>
-      </form>
-      <a href="#" class="privacy">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
-
-<!-- WhatsApp Button -->
-<a
-  href="https://wa.me/918050575628"
-  target="_blank"
-  class="whatsapp-btn"
-  aria-label="WhatsApp"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="white"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
+    <!-- Add Font Awesome CDN in your <head> or above footer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-  </svg>
-</a>
 
-<!-- Scroll To Top Button -->
-<button class="scroll-top" aria-label="Scroll to top">↑</button>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <!-- Left Section -->
+        <div class="footer-col">
+          <img src="images/platinum plate.jpg" alt="" class="logo" />
+          <p>
+            Address: 2nd Floor, Rohini Layout Rd,<br />
+            opp. SHILPARAMAM, near Cyber Towers Signal,<br />
+            Surya Enclave, HITEC City,<br />
+            Hyderabad, Telangana 500081
+          </p>
+          <p class="phone">+91 8050575628</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
 
-<!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your EmailJS user ID
-  })();
-</script>
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
 
+        <!-- Services -->
+        <div class="footer-col">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="#">Catering for Weddings</a></li>
+            <li><a href="#">Corporate Events</a></li>
+            <li><a href="#">Birthday Parties</a></li>
+            <li><a href="#">Outdoor Catering</a></li>
+            <li><a href="#">Custom Menus</a></li>
+          </ul>
+        </div>
 
+        <!-- Stay Connected -->
+        <div class="footer-col">
+          <h3>Stay Connected</h3>
+          <p>
+            Join our mailing list to receive the latest<br />
+            catering tips, offers, and event updates.
+          </p>
+          <form id="newsletter-form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email Here"
+              required
+            />
+            <button type="submit">➤</button>
+          </form>
+          <a href="#" class="privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
 
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/918050575628"
+      target="_blank"
+      class="whatsapp-btn"
+      aria-label="WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="white"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
+        />
+      </svg>
+    </a>
 
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your EmailJS user ID
+      })();
+    </script>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Corporate Events | The Platinum Plate | Premium Catering Services in Hyderabad
+    </title>
+    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg" />
+    <meta
+      name="description"
+      content="Professional corporate event catering in Hyderabad. Tailored menus for meetings, conferences, and team celebrations with impeccable service."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/platinum plate.jpg"
+              class="platinum-image-logo"
+              alt="The Platinum Plate"
+            />
+          </a>
+        </div>
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+            <!-- Services with dropdown -->
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle"
+                >Services ▾</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="CateringforWeddings.html">Catering for Weddings</a></li>
+                <li><a href="CorporateEvents.html">Corporate Events</a></li>
+                <li><a href="BirthdayParties.html">Birthday Parties</a></li>
+                <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
+                <li><a href="CustomMenus.html">Custom Menus</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggles =
+              document.querySelectorAll(".dropdown-toggle");
+
+            dropdownToggles.forEach((toggle) => {
+              toggle.addEventListener("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.parentElement.classList.toggle("active");
+              });
+            });
+          });
+        </script>
+        <div class="contact-info">
+          <a href="tel:+911234567890">Call Now: +91 1234567890</a>
+          <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
+        </div>
+      </div>
+    </header>
+
+    <section id="corporate-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/400?random=30') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px;">
+  <div class="container" style="max-width: 1000px; margin: auto;">
+    <h1 style="font-size: 48px; margin-bottom: 15px; font-family: 'Poppins', sans-serif;">Corporate Events</h1>
+    <p style="font-size: 20px; line-height: 1.6;">Elevate your business gatherings with our professional corporate catering services.</p>
+  </div>
+</section>
+
+<section id="corporate-content" style="padding: 60px 20px; background-color: #f9f9f9; font-family: 'Poppins', sans-serif; color: #333;">
+  <div class="container" style="max-width: 1100px; margin: auto;">
+
+    <div class="corporate-intro" style="text-align: center; margin-bottom: 50px;">
+      <h2 style="font-size: 32px; margin-bottom: 15px; color: #c59d5f;">Impress Your Clients and Team</h2>
+      <p style="font-size: 18px; line-height: 1.8;">Our corporate catering services are designed to make your business events memorable and productive. From board meetings to large conferences, we provide seamless catering solutions that reflect your company's professionalism and attention to detail.</p>
+    </div>
+
+    <div class="corporate-features" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 60px;">
+      <div class="feature" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; width: 300px; text-align: center;">
+        <img src="https://picsum.photos/300/200?random=13" alt="Flexible Menus" style="width: 100%; height: 200px; object-fit: cover;">
+        <h3 style="margin: 15px 0 10px; color: #c59d5f;">Flexible Menus</h3>
+        <p style="padding: 0 15px 20px; font-size: 15px;">Adaptable options for different dietary needs and preferences.</p>
+      </div>
+
+      <div class="feature" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; width: 300px; text-align: center;">
+        <img src="https://picsum.photos/300/200?random=14" alt="Timely Service" style="width: 100%; height: 200px; object-fit: cover;">
+        <h3 style="margin: 15px 0 10px; color: #c59d5f;">Timely Service</h3>
+        <p style="padding: 0 15px 20px; font-size: 15px;">Punctual delivery and setup to keep your event on schedule.</p>
+      </div>
+
+      <div class="feature" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; width: 300px; text-align: center;">
+        <img src="https://picsum.photos/300/200?random=15" alt="Quality Assurance" style="width: 100%; height: 200px; object-fit: cover;">
+        <h3 style="margin: 15px 0 10px; color: #c59d5f;">Quality Assurance</h3>
+        <p style="padding: 0 15px 20px; font-size: 15px;">Consistent high-quality food and service every time.</p>
+      </div>
+    </div>
+
+    <div class="corporate-packages" style="text-align: center;">
+      <h2 style="font-size: 32px; color: #c59d5f; margin-bottom: 40px;">Corporate Packages</h2>
+      <div class="packages-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+        <div class="package" style="background: white; padding: 25px; width: 320px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: left;">
+          <h3 style="color: #c59d5f; font-size: 24px; margin-bottom: 10px;">Meeting Package</h3>
+          <p style="font-size: 15px; margin-bottom: 10px;">Perfect for small team meetings.</p>
+          <ul style="list-style: none; padding: 0; font-size: 15px; line-height: 1.8;">
+            <li>☕ Coffee/tea service</li>
+            <li>🥪 Light snacks and finger foods</li>
+            <li>💧 Mineral water</li>
+          </ul>
+          <p style="font-weight: bold; margin-top: 15px; color: #333;">Starting from ₹500 per person</p>
+        </div>
+
+        <div class="package" style="background: white; padding: 25px; width: 320px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: left;">
+          <h3 style="color: #c59d5f; font-size: 24px; margin-bottom: 10px;">Conference Package</h3>
+          <p style="font-size: 15px; margin-bottom: 10px;">Ideal for large gatherings and seminars.</p>
+          <ul style="list-style: none; padding: 0; font-size: 15px; line-height: 1.8;">
+            <li>🍳 Buffet-style breakfast/lunch</li>
+            <li>🥐 Continental snacks</li>
+            <li>🥤 Beverages and refreshments</li>
+            <li>👨‍🍳 Setup and service</li>
+          </ul>
+          <p style="font-weight: bold; margin-top: 15px; color: #333;">Starting from ₹800 per person</p>
+        </div>
+
+        <div class="package" style="background: white; padding: 25px; width: 320px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: left;">
+          <h3 style="color: #c59d5f; font-size: 24px; margin-bottom: 10px;">Executive Package</h3>
+          <p style="font-size: 15px; margin-bottom: 10px;">The premium choice for VIP events.</p>
+          <ul style="list-style: none; padding: 0; font-size: 15px; line-height: 1.8;">
+            <li>🍽️ Multi-course gourmet meal</li>
+            <li>🍷 Premium beverages and wine</li>
+            <li>🧑‍💼 Personalized service</li>
+            <li>🎤 Event coordination</li>
+          </ul>
+          <p style="font-weight: bold; margin-top: 15px; color: #333;">Starting from ₹1,500 per person</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-col">
+          <img src="images/platinum plate.jpg" alt="" class="logo" />
+          <p>
+            Address: 2nd Floor, Rohini Layout Rd,<br />
+            opp. SHILPARAMAM, near Cyber Towers Signal,<br />
+            Surya Enclave, HITEC City,<br />
+            Hyderabad, Telangana 500081
+          </p>
+          <p class="phone">+91 8050575628</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Service</h3>
+          <ul class="dropdown-menu">
+            <li><a href="CateringforWeddings.html">Catering for Weddings</a></li>
+            <li><a href="CorporateEvents.html">Corporate Events</a></li>
+            <li><a href="BirthdayParties.html">Birthday Parties</a></li>
+            <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
+            <li><a href="CustomMenus.html">Custom Menus</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Stay Connected</h3>
+          <p>
+            Join our mailing list to receive the latest<br />
+            catering tips, offers, and event updates.
+          </p>
+          <form id="newsletter-form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email Here"
+              required
+            />
+            <button type="submit">➤</button>
+          </form>
+          <a href="#" class="privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/918050575628"
+      target="_blank"
+      class="whatsapp-btn"
+      aria-label="WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="white"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
+        />
+      </svg>
+    </a>
+
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("YOUR_EMAILJS_USER_ID");
+      })();
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
