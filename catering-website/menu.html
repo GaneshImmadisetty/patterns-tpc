@@ -13,6 +13,109 @@
       content="Explore our diverse menu including vegetarian, non-vegetarian, desserts, and beverages for all your catering needs."
     />
     <link rel="stylesheet" href="css/style.css" />
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .tabs {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .tabs button {
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 25px;
+      border: 1px solid #c89d5c;
+      background: transparent;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .tabs button.active {
+      background: #c89d5c;
+      color: white;
+      border: none;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px dashed #ddd;
+      padding: 10px 0;
+    }
+
+    .menu-item img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .menu-item h4 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .menu-item p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .menu-price {
+      margin-left: auto;
+      color: #5cb85c;
+      font-weight: bold;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .menu-items {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .menu-price {
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.offer-price {
+  color: #5cb85c; /* red highlight */
+  font-size: 18px;
+}
+
+  </style>
+
+  
+
   </head>
   <body>
     <!-- Header -->
@@ -89,124 +192,415 @@
       </div>
     </header>
 
-    <section id="menu-hero">
+    <!-- <section id="menu-hero">
       <div class="container">
         <h1>Our Menu</h1>
         <p>Delicious dishes for every palate and occasion.</p>
       </div>
-    </section>
+    </section> -->
+<section id="birthday-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/bh.png') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px;">
+  <div class="container" style="max-width: 1000px; margin: auto;">
+    <h1 style="font-size: 48px; margin-bottom: 15px; font-family: 'Poppins', sans-serif;">Our Menu</h1>
+    <p style="font-size: 20px; line-height: 1.6;">Delicious dishes for every palate and occasion.</p>
+  </div>
+</section>
 
-    <section id="menu-categories">
-      <div class="container">
-        <div class="menu-tabs">
-          <button class="tab-btn active" data-category="veg">Vegetarian</button>
-          <button class="tab-btn" data-category="nonveg">Non-Vegetarian</button>
-          <button class="tab-btn" data-category="desserts">Desserts</button>
-          <button class="tab-btn" data-category="beverages">Beverages</button>
+
+
+
+<!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="starter">Starter</button>
+    <button class="tab-btn" data-tab="maincourse">Main Course</button>
+    <button class="tab-btn" data-tab="drinks">Drinks</button>
+    <button class="tab-btn" data-tab="offers">Offers</button>
+    <button class="tab-btn" data-tab="special">Our Special</button>
+  </div>
+
+  <!-- Starter -->
+  <div id="starter" class="tab-content active">
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Paneer">
+        <div>
+          <h4>Paneer Tikka</h4>
+          <p>Grilled paneer cubes marinated in spices.</p>
         </div>
-        <div class="menu-content">
-          <!-- Vegetarian -->
-          <div id="veg" class="menu-category active">
-            <h2>Vegetarian Dishes</h2>
-            <div class="menu-items">
-              <div class="menu-item">
-                <img
-                  src="https://images.pexels.com/photos/30858402/pexels-photo-30858402.jpeg?_gl=1*tdc9yt*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjU5NzckajU5JGwwJGgw"
-                  alt="Paneer Butter Masala"
-                />
-                <h3>Paneer Butter Masala</h3>
-                <p>Creamy and rich paneer curry.</p>
-                <span class="price">₹250 per plate</span>
-              </div>
-              <div class="menu-item">
-                <img
-                  src="https://images.pexels.com/photos/7593267/pexels-photo-7593267.jpeg?_gl=1*170e593*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjY5NzMkajI4JGwwJGgw"
-                  alt="Vegetable Biryani"
-                />
-                <h3>Vegetable Biryani</h3>
-                <p>Aromatic rice with mixed vegetables.</p>
-                <span class="price">₹200 per plate</span>
-              </div>
-            </div>
-          </div>
+        <div class="menu-price">$90</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Paneer">
+        <div>
+          <h4>Paneer Tikka</h4>
+          <p>Grilled paneer cubes marinated in spices.</p>
+        </div>
+        <div class="menu-price">$90</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Paneer">
+        <div>
+          <h4>Paneer Tikka</h4>
+          <p>Grilled paneer cubes marinated in spices.</p>
+        </div>
+        <div class="menu-price">$90</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Paneer">
+        <div>
+          <h4>Paneer Tikka</h4>
+          <p>Grilled paneer cubes marinated in spices.</p>
+        </div>
+        <div class="menu-price">$90</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Paneer">
+        <div>
+          <h4>Paneer Tikka</h4>
+          <p>Grilled paneer cubes marinated in spices.</p>
+        </div>
+        <div class="menu-price">$90</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/bh.png" alt="Sabudana">
+        <div>
+          <h4>Sabudana Tikki</h4>
+          <p>Crunchy tikkis made with sabudana and peanuts.</p>
+        </div>
+        <div class="menu-price">$80</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Bacon">
+        <div>
+          <h4>Veg Spring Roll</h4>
+          <p>Crispy rolls filled with mixed vegetables.</p>
+        </div>
+        <div class="menu-price">$70</div>
+      </div>
+    </div>
+  </div>
 
-          <!-- Non-Vegetarian -->
-          <div id="nonveg" class="menu-category">
-            <h2>Non-Vegetarian Dishes</h2>
-            <div class="menu-items">
-              <div class="menu-item">
-                <img
-                  src="https://images.pexels.com/photos/14691481/pexels-photo-14691481.png?_gl=1*mrm5cd*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjcxMDkkajMkbDAkaDA."
-                  alt="Chicken Curry"
-                />
-                <h3>Chicken Curry</h3>
-                <p>Spicy and flavorful chicken curry.</p>
-                <span class="price">₹300 per plate</span>
-              </div>
-              <div class="menu-item">
-                <img
-                  src="https://images.pexels.com/photos/9609847/pexels-photo-9609847.jpeg?_gl=1*rrqg6y*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjcyNTIkajU5JGwwJGgw"
-                  alt="Mutton Biryani"
-                />
-                <h3>Mutton Biryani</h3>
-                <p>Tender mutton with basmati rice.</p>
-                <span class="price">₹350 per plate</span>
-              </div>
-            </div>
-          </div>
+  <!-- Main Course -->
+  <div id="maincourse" class="tab-content">
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/cm.png" alt="Pizza">
+        <div>
+          <h4>Paneer Butter Masala</h4>
+          <p>Paneer cubes cooked in creamy tomato gravy.</p>
+        </div>
+        <div class="menu-price">$150</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Chicken">
+        <div>
+          <h4>Chicken Curry</h4>
+          <p>Authentic Indian chicken curry with spices.</p>
+        </div>
+        <div class="menu-price">$180</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Rice">
+        <div>
+          <h4>Veg Biryani</h4>
+          <p>Aromatic rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-price">$160</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Rice">
+        <div>
+          <h4>Veg Biryani</h4>
+          <p>Aromatic rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-price">$160</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Rice">
+        <div>
+          <h4>Veg Biryani</h4>
+          <p>Aromatic rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-price">$160</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Rice">
+        <div>
+          <h4>Veg Biryani</h4>
+          <p>Aromatic rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-price">$160</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Rice">
+        <div>
+          <h4>Veg Biryani</h4>
+          <p>Aromatic rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-price">$160</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Rice">
+        <div>
+          <h4>Veg Biryani</h4>
+          <p>Aromatic rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-price">$160</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Rice">
+        <div>
+          <h4>Veg Biryani</h4>
+          <p>Aromatic rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-price">$160</div>
+      </div>
+    </div>
+  </div>
 
-          <!-- Desserts -->
-          <div id="desserts" class="menu-category">
-            <h2>Desserts</h2>
-            <div class="menu-items">
-              <div class="menu-item">
-                <img
-                  src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/4291f9dc-9177-453e-96a1-b812746aae5a.png"
-                  alt="Ras Malai"
-                />
-                <h3>Ras Malai</h3>
-                <p>Soft cheese dumplings in sweetened milk.</p>
-                <span class="price">₹50 per piece</span>
-              </div>
-              <div class="menu-item">
-                <img
-                  src="https://images.pexels.com/photos/30577321/pexels-photo-30577321.jpeg?_gl=1*18gfkgt*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjc5MTkkajU5JGwwJGgw"
-                  alt="Gulab Jamun"
-                />
-                <h3>Gulab Jamun</h3>
-                <p>Sweet dumplings soaked in rose syrup.</p>
-                <span class="price">₹40 per piece</span>
-              </div>
-            </div>
-          </div>
+  <!-- Drinks -->
+  <div id="drinks" class="tab-content">
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/bh.png" alt="Lassi">
+        <div>
+          <h4>Mango Lassi</h4>
+          <p>Refreshing yogurt drink with mango flavor.</p>
+        </div>
+        <div class="menu-price">$50</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Juice">
+        <div>
+          <h4>Fresh Lime Soda</h4>
+          <p>Perfect balance of sweet and sour lime soda.</p>
+        </div>
+        <div class="menu-price">$40</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Tea">
+        <div>
+          <h4>Masala Chai</h4>
+          <p>Spiced Indian tea with milk.</p>
+        </div>
+        <div class="menu-price">$30</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Tea">
+        <div>
+          <h4>Masala Chai</h4>
+          <p>Spiced Indian tea with milk.</p>
+        </div>
+        <div class="menu-price">$30</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Tea">
+        <div>
+          <h4>Masala Chai</h4>
+          <p>Spiced Indian tea with milk.</p>
+        </div>
+        <div class="menu-price">$30</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Tea">
+        <div>
+          <h4>Masala Chai</h4>
+          <p>Spiced Indian tea with milk.</p>
+        </div>
+        <div class="menu-price">$30</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Tea">
+        <div>
+          <h4>Masala Chai</h4>
+          <p>Spiced Indian tea with milk.</p>
+        </div>
+        <div class="menu-price">$30</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Tea">
+        <div>
+          <h4>Masala Chai</h4>
+          <p>Spiced Indian tea with milk.</p>
+        </div>
+        <div class="menu-price">$30</div>
+      </div>
+    </div>
+  </div>
 
-          <!-- Beverages -->
-          <div id="beverages" class="menu-category">
-            <h2>Beverages</h2>
-            <div class="menu-items">
-              <div class="menu-item">
-                <img
-                  src="https://images.pexels.com/photos/15522898/pexels-photo-15522898.jpeg?_gl=1*1sc152x*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjgwNTIkajQkbDAkaDA."
-                  alt="Lassi"
-                />
-                <h3>Lassi</h3>
-                <p>Refreshing yogurt drink.</p>
-                <span class="price">₹80 per glass</span>
-              </div>
-              <div class="menu-item">
-                <img
-                  src="https://images.pexels.com/photos/20270270/pexels-photo-20270270.jpeg?_gl=1*1kjir2s*_ga*NjQyNzA4NzYzLjE3NTc0MTgyNzM.*_ga_8JE65Q40S6*czE3NTkxMjU4NzAkbzQkZzEkdDE3NTkxMjgxNjYkajI1JGwwJGgw"
-                  alt="Masala Chai"
-                />
-                <h3>Masala Chai</h3>
-                <p>Spiced tea with aromatic flavors.</p>
-                <span class="price">₹50 per cup</span>
-              </div>
-            </div>
-          </div>
+  <!-- Offers -->
+  <div id="offers" class="tab-content">
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Offer">
+        <div>
+          <h4>Combo 1</h4>
+          <p>Paneer Butter Masala + 2 Rotis + Drink.</p>
+        </div>
+        <div class="menu-price">
+          <span class="original-price">$250</span> 
+    <span class="offer-price">$200</span>
         </div>
       </div>
-    </section>
+
+      <div class="menu-item">
+  <img src="images/about.jpg" alt="Offer">
+  <div>
+    <h4>Combo 1</h4>
+    <p>Paneer Butter Masala + 2 Rotis + Drink.</p>
+  </div>
+  <div class="menu-price">
+    <span class="original-price">$250</span> 
+    <span class="offer-price">$200</span>
+  </div>
+</div>
+      
+<div class="menu-item">
+        <img src="images/about.jpg" alt="Offer">
+        <div>
+          <h4>Combo 2</h4>
+          <p>Chicken Curry + Rice + Drink.</p>
+        </div>
+        <div class="menu-price">
+          <span class="original-price">$250</span> 
+    <span class="offer-price">$200</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Offer">
+        <div>
+          <h4>Combo 2</h4>
+          <p>Chicken Curry + Rice + Drink.</p>
+        </div>
+        <div class="menu-price">
+          <span class="original-price">$250</span> 
+    <span class="offer-price">$200</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Offer">
+        <div>
+          <h4>Combo 2</h4>
+          <p>Chicken Curry + Rice + Drink.</p>
+        </div>
+        <div class="menu-price">
+          <span class="original-price">$250</span> 
+    <span class="offer-price">$200</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Offer">
+        <div>
+          <h4>Combo 2</h4>
+          <p>Chicken Curry + Rice + Drink.</p>
+        </div>
+        <div class="menu-price">
+          <span class="original-price">$250</span> 
+    <span class="offer-price">$200</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Offer">
+        <div>
+          <h4>Combo 2</h4>
+          <p>Chicken Curry + Rice + Drink.</p>
+        </div>
+        <div class="menu-price">
+          <span class="original-price">$250</span> 
+    <span class="offer-price">$200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Special -->
+  <div id="special" class="tab-content">
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Chef’s Special Thali</h4>
+          <p>Complete Indian thali with curry, rice & sweet.</p>
+        </div>
+        <div class="menu-price">$300</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Special Biryani</h4>
+          <p>Chef’s signature biryani cooked with secret spices.</p>
+        </div>
+        <div class="menu-price">$350</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Special Biryani</h4>
+          <p>Chef’s signature biryani cooked with secret spices.</p>
+        </div>
+        <div class="menu-price">$350</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Special Biryani</h4>
+          <p>Chef’s signature biryani cooked with secret spices.</p>
+        </div>
+        <div class="menu-price">$350</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Special Biryani</h4>
+          <p>Chef’s signature biryani cooked with secret spices.</p>
+        </div>
+        <div class="menu-price">$350</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Special Biryani</h4>
+          <p>Chef’s signature biryani cooked with secret spices.</p>
+        </div>
+        <div class="menu-price">$350</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Special Biryani</h4>
+          <p>Chef’s signature biryani cooked with secret spices.</p>
+        </div>
+        <div class="menu-price">$350</div>
+      </div>
+      <div class="menu-item">
+        <img src="images/about.jpg" alt="Special">
+        <div>
+          <h4>Special Biryani</h4>
+          <p>Chef’s signature biryani cooked with secret spices.</p>
+        </div>
+        <div class="menu-price">$350</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        // remove active from all
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        tabContents.forEach(content => content.classList.remove("active"));
+
+        // add active to current
+        button.classList.add("active");
+        document.getElementById(button.dataset.tab).classList.add("active");
+      });
+    });
+  </script>
+
+   
 
     <!-- Add Font Awesome CDN in your <head> or above footer -->
 

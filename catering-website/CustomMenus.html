@@ -1,218 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Custom Menus | The Platinum Plate | Premium Catering Services in Hyderabad
-    </title>
-    <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg" />
-    <meta
-      name="description"
-      content="Customized catering menus in Hyderabad. Tailor-made food experiences for unique events with personalized flavors and dietary accommodations."
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img
-              src="images/platinum plate.jpg"
-              class="platinum-image-logo"
-              alt="The Platinum Plate"
-            />
-          </a>
-        </div>
-        <!-- Hamburger Button -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
 
-        <nav id="navMenu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Custom Menus | The Platinum Plate | Premium Catering Services in Hyderabad
+  </title>
+  <link rel="icon" href="images/platinum plate.jpg" type="image/jpeg" />
+  <meta name="description"
+    content="Customized catering menus in Hyderabad. Tailor-made food experiences for unique events with personalized flavors and dietary accommodations." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-            <!-- Services with dropdown -->
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropdown-toggle"
-                >Services ▾</a
-              >
-              <ul class="dropdown-menu">
-                <li><a href="CateringforWeddings.html">Catering for Weddings</a></li>
-                <li><a href="CorporateEvents.html">Corporate Events</a></li>
-                <li><a href="BirthdayParties.html">Birthday Parties</a></li>
-                <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
-                <li><a href="CustomMenus.html">Custom Menus</a></li>
-              </ul>
-            </li>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/platinum plate.jpg" class="platinum-image-logo" alt="The Platinum Plate" />
+        </a>
+      </div>
+      <!-- Hamburger Button -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const dropdownToggles =
-              document.querySelectorAll(".dropdown-toggle");
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
 
-            dropdownToggles.forEach((toggle) => {
-              toggle.addEventListener("click", function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                this.parentElement.classList.toggle("active");
-              });
+          <!-- Services with dropdown -->
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle">Services ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="CateringforWeddings.html">Catering for Weddings</a></li>
+              <li><a href="CorporateEvents.html">Corporate Events</a></li>
+              <li><a href="BirthdayParties.html">Birthday Parties</a></li>
+              <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
+              <li><a href="CustomMenus.html">Custom Menus</a></li>
+            </ul>
+          </li>
+
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const dropdownToggles =
+            document.querySelectorAll(".dropdown-toggle");
+
+          dropdownToggles.forEach((toggle) => {
+            toggle.addEventListener("click", function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+              this.parentElement.classList.toggle("active");
             });
           });
-        </script>
-        <div class="contact-info">
-          <a href="tel:+911234567890">Call Now: +91 1234567890</a>
-          <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
-        </div>
-      </div>
-    </header>
-
-    <section id="custom-hero" style="background: url('images/ccm.png') center/cover no-repeat; color: white; text-align: center; padding: 80px 20px;">
-  <div class="container" style="max-width: 1000px; margin: auto;">
-    <h1 style="font-size: 48px; margin-bottom: 15px; font-family: Arial, sans-serif;">Custom Menus</h1>
-    <p style="font-size: 20px; line-height: 1.5; font-family: Arial, sans-serif;">Create your perfect menu with our expert chefs and personalized catering solutions.</p>
-  </div>
-</section>
-
-<section id="custom-content" style="padding: 60px 20px; font-family: Arial, sans-serif;">
-  <div class="container" style="max-width: 1100px; margin: auto;">
-
-    <!-- Intro -->
-    <div class="custom-intro" style="text-align: center; margin-bottom: 50px;">
-      <h2 style="font-size: 32px; margin-bottom: 15px;">Your Vision, Our Expertise</h2>
-      <p style="font-size: 18px; line-height: 1.6; color: #444;">Every event is unique, and so should be your menu. Our custom menu service allows you to work directly with our culinary team to design a dining experience that perfectly matches your vision, preferences, and requirements.</p>
-    </div>
-
-    <!-- Features -->
-    <div class="custom-features" style="display: flex; gap: 30px; justify-content: center; margin-bottom: 60px; flex-wrap: wrap;">
-      <div class="feature" style="flex: 1; min-width: 280px; text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <img src="images/chc.png" alt="Chef Consultation" style="width: 100%; height: 200px; object-fit: cover;">
-        <h3 style="margin-bottom: 10px;">Chef Consultation</h3>
-        <p style="color: #555;">Work with our expert chefs to design your menu.</p>
-      </div>
-      <div class="feature" style="flex: 1; min-width: 280px; text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <img src="images/da.png" alt="Dietary Options" style="width: 100%; height: 200px; object-fit: cover;">
-        <h3 style="margin-bottom: 10px;">Dietary Accommodations</h3>
-        <p style="color: #555;">Vegan, gluten-free, and allergen-free options available.</p>
-      </div>
-      <div class="feature" style="flex: 1; min-width: 280px; text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <img src="images/tm.png" alt="Themed Menus" style="width: 100%; height: 200px; object-fit: cover;">
-        <h3 style="margin-bottom: 10px;">Themed Menus</h3>
-        <p style="color: #555;">Menus inspired by cultures, seasons, or your event theme.</p>
+        });
+      </script>
+      <div class="contact-info">
+        <a href="tel:+911234567890">Call Now: +91 1234567890</a>
+        <a href="https://wa.me/911234567890" class="whatsapp-btn"></a>
       </div>
     </div>
+  </header>
 
-    <!-- Process -->
-    <div class="custom-process" style="margin-bottom: 60px; text-align: center;">
-      <h2 style="font-size: 32px; margin-bottom: 30px;">Our Customization Process</h2>
-      <div class="process-steps" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <div class="step" style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
-          <h3 style="margin-bottom: 10px;">1. Consultation</h3>
-          <p style="color:#555;">Discuss your vision, preferences, and requirements with our team.</p>
+  <section id="custom-hero"
+    style="background: url('images/ccm.png') center/cover no-repeat; color: white; text-align: center; padding: 80px 20px;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+      <h1 style="font-size: 48px; margin-bottom: 15px; font-family: Arial, sans-serif;">Custom Menus</h1>
+      <p style="font-size: 20px; line-height: 1.5; font-family: Arial, sans-serif;">Create your perfect menu with our
+        expert chefs and personalized catering solutions.</p>
+    </div>
+  </section>
+
+  <section id="custom-content" style="padding: 60px 20px; font-family: Arial, sans-serif;">
+    <div class="container" style="max-width: 1100px; margin: auto;">
+
+      <!-- Intro -->
+      <div class="custom-intro" style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 32px; margin-bottom: 15px;">Your Vision, Our Expertise</h2>
+        <p style="font-size: 18px; line-height: 1.6; color: #444;">Every event is unique, and so should be your menu.
+          Our custom menu service allows you to work directly with our culinary team to design a dining experience that
+          perfectly matches your vision, preferences, and requirements.</p>
+      </div>
+
+      <!-- Features -->
+      <div class="custom-features"
+        style="display: flex; gap: 30px; justify-content: center; margin-bottom: 60px; flex-wrap: wrap;">
+        <div class="feature"
+          style="flex: 1; min-width: 280px; text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="images/chc.png" alt="Chef Consultation" style="width: 100%; height: 200px; object-fit: cover;">
+          <h3 style="margin-bottom: 10px;">Chef Consultation</h3>
+          <p style="color: #555;">Work with our expert chefs to design your menu.</p>
         </div>
-        <div class="step" style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
-          <h3 style="margin-bottom: 10px;">2. Menu Design</h3>
-          <p style="color:#555;">Our chefs create a tailored menu based on your input.</p>
+        <div class="feature"
+          style="flex: 1; min-width: 280px; text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="images/da.png" alt="Dietary Options" style="width: 100%; height: 200px; object-fit: cover;">
+          <h3 style="margin-bottom: 10px;">Dietary Accommodations</h3>
+          <p style="color: #555;">Vegan, gluten-free, and allergen-free options available.</p>
         </div>
-        <div class="step" style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
-          <h3 style="margin-bottom: 10px;">3. Tasting Session</h3>
-          <p style="color:#555;">Sample dishes to ensure everything meets your expectations.</p>
-        </div>
-        <div class="step" style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
-          <h3 style="margin-bottom: 10px;">4. Finalization</h3>
-          <p style="color:#555;">Refine the menu and confirm all details for your event.</p>
+        <div class="feature"
+          style="flex: 1; min-width: 280px; text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="images/tm.png" alt="Themed Menus" style="width: 100%; height: 200px; object-fit: cover;">
+          <h3 style="margin-bottom: 10px;">Themed Menus</h3>
+          <p style="color: #555;">Menus inspired by cultures, seasons, or your event theme.</p>
         </div>
       </div>
-    </div>
 
-    <!-- Packages -->
-    <div class="custom-packages" style="text-align: center;">
-      <h2 style="font-size: 32px; margin-bottom: 30px;">Custom Menu Options</h2>
-      <div class="packages-grid" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
-        
-        <div class="package" style="flex: 1; min-width: 280px; background: #f9f9f9; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: left;">
-          <h3 style="margin-bottom: 10px; font-size: 22px;">Personalized Buffet</h3>
-          <p style="color:#666; margin-bottom: 15px;">Custom buffet spread for your event.</p>
-          <ul style="padding-left: 20px; margin-bottom: 15px; color:#444; line-height:1.6;">
-            <li>Selection of appetizers</li>
-            <li>Main courses of your choice</li>
-            <li>Accompanying sides</li>
-            <li>Desserts and beverages</li>
-          </ul>
-          <p class="price" style="font-weight: bold; color: #27ae60;">Starting from ₹1,200 per person</p>
-        </div>
-
-        <div class="package" style="flex: 1; min-width: 280px; background: #f9f9f9; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: left;">
-          <h3 style="margin-bottom: 10px; font-size: 22px;">Sit-Down Dinner</h3>
-          <p style="color:#666; margin-bottom: 15px;">Elegant plated meals for formal events.</p>
-          <ul style="padding-left: 20px; margin-bottom: 15px; color:#444; line-height:1.6;">
-            <li>Multi-course plated dinner</li>
-            <li>Wine pairings (optional)</li>
-            <li>Professional service staff</li>
-            <li>Custom presentation</li>
-          </ul>
-          <p class="price" style="font-weight: bold; color: #27ae60;">Starting from ₹2,500 per person</p>
-        </div>
-
-        <div class="package" style="flex: 1; min-width: 280px; background: #f9f9f9; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: left;">
-          <h3 style="margin-bottom: 10px; font-size: 22px;">Cocktail Reception</h3>
-          <p style="color:#666; margin-bottom: 15px;">Perfect for networking and celebrations.</p>
-          <ul style="padding-left: 20px; margin-bottom: 15px; color:#444; line-height:1.6;">
-            <li>Passed appetizers and canapés</li>
-            <li>Cocktail and beverage service</li>
-            <li>Interactive food stations</li>
-            <li>Custom drink menu</li>
-          </ul>
-          <p class="price" style="font-weight: bold; color: #27ae60;">Starting from ₹1,800 per person</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-
-
-    <!-- Footer Section -->
-    <footer>
-      <div class="container">
-        <!-- Left Section -->
-        <div class="footer-col">
-          <img src="images/ff.png" alt="" class="logo" />
-          <p>
-            Address: 2nd Floor, Rohini Layout Rd,<br />
-            opp. SHILPARAMAM, near Cyber Towers Signal,<br />
-            Surya Enclave, HITEC City,<br />
-            Hyderabad, Telangana 500081
-          </p>
-          <p class="phone">+91 8050575628</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+      <!-- Process -->
+      <div class="custom-process" style="margin-bottom: 60px; text-align: center;">
+        <h2 style="font-size: 32px; margin-bottom: 30px;">Our Customization Process</h2>
+        <div class="process-steps" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <div class="step"
+            style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
+            <h3 style="margin-bottom: 10px;">1. Consultation</h3>
+            <p style="color:#555;">Discuss your vision, preferences, and requirements with our team.</p>
+          </div>
+          <div class="step"
+            style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
+            <h3 style="margin-bottom: 10px;">2. Menu Design</h3>
+            <p style="color:#555;">Our chefs create a tailored menu based on your input.</p>
+          </div>
+          <div class="step"
+            style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
+            <h3 style="margin-bottom: 10px;">3. Tasting Session</h3>
+            <p style="color:#555;">Sample dishes to ensure everything meets your expectations.</p>
+          </div>
+          <div class="step"
+            style="flex: 1; min-width: 220px; background: #fafafa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left;">
+            <h3 style="margin-bottom: 10px;">4. Finalization</h3>
+            <p style="color:#555;">Refine the menu and confirm all details for your event.</p>
           </div>
         </div>
+      </div>
 
-        <!-- Navigation -->
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <!-- <ul>
+      <!-- Packages -->
+      <div class="custom-packages" style="text-align: center;">
+        <h2 style="font-size: 32px; margin-bottom: 30px;">Custom Menu Options</h2>
+        <div class="packages-grid" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+
+          <div class="package"
+            style="flex: 1; min-width: 280px; background: #f9f9f9; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: left;">
+            <h3 style="margin-bottom: 10px; font-size: 22px;">Personalized Buffet</h3>
+            <p style="color:#666; margin-bottom: 15px;">Custom buffet spread for your event.</p>
+            <ul style="padding-left: 20px; margin-bottom: 15px; color:#444; line-height:1.6;">
+              <li>Selection of appetizers</li>
+              <li>Main courses of your choice</li>
+              <li>Accompanying sides</li>
+              <li>Desserts and beverages</li>
+            </ul>
+            <p class="price" style="font-weight: bold; color: #27ae60;">Starting from ₹1,200 per person</p>
+          </div>
+
+          <div class="package"
+            style="flex: 1; min-width: 280px; background: #f9f9f9; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: left;">
+            <h3 style="margin-bottom: 10px; font-size: 22px;">Sit-Down Dinner</h3>
+            <p style="color:#666; margin-bottom: 15px;">Elegant plated meals for formal events.</p>
+            <ul style="padding-left: 20px; margin-bottom: 15px; color:#444; line-height:1.6;">
+              <li>Multi-course plated dinner</li>
+              <li>Wine pairings (optional)</li>
+              <li>Professional service staff</li>
+              <li>Custom presentation</li>
+            </ul>
+            <p class="price" style="font-weight: bold; color: #27ae60;">Starting from ₹2,500 per person</p>
+          </div>
+
+          <div class="package"
+            style="flex: 1; min-width: 280px; background: #f9f9f9; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: left;">
+            <h3 style="margin-bottom: 10px; font-size: 22px;">Cocktail Reception</h3>
+            <p style="color:#666; margin-bottom: 15px;">Perfect for networking and celebrations.</p>
+            <ul style="padding-left: 20px; margin-bottom: 15px; color:#444; line-height:1.6;">
+              <li>Passed appetizers and canapés</li>
+              <li>Cocktail and beverage service</li>
+              <li>Interactive food stations</li>
+              <li>Custom drink menu</li>
+            </ul>
+            <p class="price" style="font-weight: bold; color: #27ae60;">Starting from ₹1,800 per person</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <!-- Left Section -->
+      <div class="footer-col">
+        <img src="images/ff.png" alt="" class="logo" />
+        <p>
+          Address: 2nd Floor, Rohini Layout Rd,<br />
+          opp. SHILPARAMAM, near Cyber Towers Signal,<br />
+          Surya Enclave, HITEC City,<br />
+          Hyderabad, Telangana 500081
+        </p>
+        <p class="phone">+91 8050575628</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <!-- <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Services</a></li>
@@ -222,95 +229,74 @@
         <li><a href="#">Contact</a></li>
       </ul> -->
 
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
 
-        <!-- Services -->
-        <div class="footer-col">
-          <h3>Service</h3>
-          <ul>
-            <li>
-              <a href="CateringforWeddings.html">Catering for Weddings</a>
-            </li>
-            <li><a href="CorporateEvents.html">Corporate Events</a></li>
-            <li><a href="BirthdayParties.html">Birthday Parties</a></li>
-            <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
-            <li><a href="CustomMenus.html">Custom Menus</a></li>
-          </ul>
-        </div>
-
-        <!-- Stay Connected -->
-        <div class="footer-col">
-          <h3>Stay Connected</h3>
-          <p>
-            Join our mailing list to receive the latest<br />
-            catering tips, offers, and event updates.
-          </p>
-          <form id="newsletter-form">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter Your Email Here"
-              required
-            />
-            <button type="submit">➤</button>
-          </form>
-          <a href="#" class="privacy">Privacy Policy</a>
-        </div>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-    </footer>
-    <!-- Footer Bottom Bar -->
-    <div class="footer-bottom">
-      <p>
-        © <span id="year"></span> The Platinum Plate. All Rights Reserved.
-        &nbsp;|&nbsp; Designed by
-        <a
-          href="https://www.thepatternscompany.com/"
-          target="_blank"
-          class="designer"
-        >
-          The Patterns Company
-        </a>
-      </p>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h3>Service</h3>
+        <ul>
+          <li>
+            <a href="CateringforWeddings.html">Catering for Weddings</a>
+          </li>
+          <li><a href="CorporateEvents.html">Corporate Events</a></li>
+          <li><a href="BirthdayParties.html">Birthday Parties</a></li>
+          <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
+          <li><a href="CustomMenus.html">Custom Menus</a></li>
+        </ul>
+      </div>
+
+      <!-- Stay Connected -->
+      <div class="footer-col">
+        <h3>Stay Connected</h3>
+        <p>
+          Join our mailing list to receive the latest<br />
+          catering tips, offers, and event updates.
+        </p>
+        <form id="newsletter-form">
+          <input type="email" id="email" name="email" placeholder="Enter Your Email Here" required />
+          <button type="submit">➤</button>
+        </form>
+        <a href="#" class="privacy">Privacy Policy</a>
+      </div>
     </div>
+  </footer>
+  <!-- Footer Bottom Bar -->
+  <div class="footer-bottom">
+    <p>
+      © <span id="year"></span> The Platinum Plate. All Rights Reserved.
+      &nbsp;|&nbsp; Designed by
+      <a href="https://www.thepatternscompany.com/" target="_blank" class="designer">
+        The Patterns Company
+      </a>
+    </p>
+  </div>
 
-    <a
-      href="https://wa.me/918050575628"
-      target="_blank"
-      class="whatsapp-btn"
-      aria-label="WhatsApp"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        fill="white"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z"
-        />
-      </svg>
-    </a>
+  <a href="https://wa.me/918050575628" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24">
+      <path
+        d="M12 0C5.37 0 0 5.373 0 12c0 2.116.55 4.163 1.6 5.967L0 24l6.26-1.584A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.74 0-3.44-.447-4.95-1.294l-.35-.193-3.71.94.99-3.61-.228-.37A9.95 9.95 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm5.06-7.563c-.278-.139-1.64-.81-1.895-.902-.254-.093-.44-.14-.627.14-.186.278-.719.902-.88 1.088-.162.186-.325.209-.603.07-.278-.14-1.175-.433-2.24-1.383-.829-.739-1.39-1.652-1.553-1.93-.162-.278-.017-.428.122-.567.126-.126.278-.325.417-.488.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.488-.07-.14-.627-1.508-.859-2.066-.226-.542-.456-.468-.627-.477-.162-.007-.348-.009-.535-.009-.186 0-.488.07-.744.348-.255.278-.97.949-.97 2.315s.994 2.687 1.132 2.873c.14.186 1.954 2.986 4.736 4.187.663.285 1.18.454 1.583.582.664.211 1.27.181 1.75.11.533-.079 1.64-.668 1.872-1.314.232-.647.232-1.2.162-1.314-.07-.116-.255-.186-.533-.325z" />
+    </svg>
+  </a>
 
-    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
 
-    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("YOUR_EMAILJS_USER_ID");
-      })();
-    </script>
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_EMAILJS_USER_ID");
+    })();
+  </script>
 
-    <script src="js/script.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
