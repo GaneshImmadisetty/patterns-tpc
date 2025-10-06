@@ -107,7 +107,9 @@
                 >Services ▾</a
               >
               <ul class="dropdown-menu">
-                <li><a href="CateringforWeddings.html">Catering for Weddings</a></li>
+                <li>
+                  <a href="CateringforWeddings.html">Catering for Weddings</a>
+                </li>
                 <li><a href="CorporateEvents.html">Corporate Events</a></li>
                 <li><a href="BirthdayParties.html">Birthday Parties</a></li>
                 <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
@@ -122,28 +124,29 @@
           </ul>
         </nav>
         <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById("hamburger");
-  const navMenu = document.getElementById("navMenu");
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+          document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navMenu = document.getElementById("navMenu");
+            const dropdownToggles =
+              document.querySelectorAll(".dropdown-toggle");
 
-  // Mobile menu toggle
-  hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-  });
+            // Mobile menu toggle
+            hamburger.addEventListener("click", () => {
+              navMenu.classList.toggle("open");
+            });
 
-  // Dropdown toggle for mobile
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", function (e) {
-      // Only run on mobile
-      if (window.innerWidth <= 992) {
-        e.preventDefault();
-        this.parentElement.classList.toggle("active");
-      }
-    });
-  });
-});
-</script>
+            // Dropdown toggle for mobile
+            dropdownToggles.forEach((toggle) => {
+              toggle.addEventListener("click", function (e) {
+                // Only run on mobile
+                if (window.innerWidth <= 992) {
+                  e.preventDefault();
+                  this.parentElement.classList.toggle("active");
+                }
+              });
+            });
+          });
+        </script>
 
         <!-- Contact Info -->
         <div class="contact-info">
@@ -470,7 +473,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="container">
         <!-- Left Section -->
         <div class="footer-col">
-          <img src="images/platinum plate.jpg" alt="" class="logo" />
+          <img src="images/ff.png" alt="" class="logo" />
           <p>
             Address: 2nd Floor, Rohini Layout Rd,<br />
             opp. SHILPARAMAM, near Cyber Towers Signal,<br />
@@ -503,7 +506,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
+            
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
@@ -515,11 +518,13 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="footer-col">
           <h3>Service</h3>
           <ul>
-            <li><a href="#">Catering for Weddings</a></li>
-            <li><a href="#">Corporate Events</a></li>
-            <li><a href="#">Birthday Parties</a></li>
-            <li><a href="#">Outdoor Catering</a></li>
-            <li><a href="#">Custom Menus</a></li>
+            <li>
+              <a href="CateringforWeddings.html">Catering for Weddings</a>
+            </li>
+            <li><a href="CorporateEvents.html">Corporate Events</a></li>
+            <li><a href="BirthdayParties.html">Birthday Parties</a></li>
+            <li><a href="OutdoorCatering.html">Outdoor Catering</a></li>
+            <li><a href="CustomMenus.html">Custom Menus</a></li>
           </ul>
         </div>
 
@@ -544,6 +549,20 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     </footer>
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <p>
+        © <span id="year"></span> The Platinum Plate. All Rights Reserved.
+        &nbsp;|&nbsp; Designed by
+        <a
+          href="https://www.thepatternscompany.com/"
+          target="_blank"
+          class="designer"
+        >
+          The Patterns Company
+        </a>
+      </p>
+    </div>
 
     <!-- WhatsApp Button -->
     <a
